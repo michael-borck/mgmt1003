@@ -1,5 +1,9 @@
 # mgmt1003
 
+<!-- BADGES:START -->
+[![presentation](https://img.shields.io/badge/-presentation-9c27b0?style=flat-square)](https://github.com/topics/presentation) [![academic](https://img.shields.io/badge/-academic-blue?style=flat-square)](https://github.com/topics/academic) [![course-materials](https://img.shields.io/badge/-course--materials-blue?style=flat-square)](https://github.com/topics/course-materials) [![documentation](https://img.shields.io/badge/-documentation-blue?style=flat-square)](https://github.com/topics/documentation) [![edtech](https://img.shields.io/badge/-edtech-4caf50?style=flat-square)](https://github.com/topics/edtech) [![educational-resources](https://img.shields.io/badge/-educational--resources-blue?style=flat-square)](https://github.com/topics/educational-resources) [![markdown](https://img.shields.io/badge/-markdown-blue?style=flat-square)](https://github.com/topics/markdown) [![publishing](https://img.shields.io/badge/-publishing-blue?style=flat-square)](https://github.com/topics/publishing) [![quarto](https://img.shields.io/badge/-quarto-blue?style=flat-square)](https://github.com/topics/quarto) [![teaching](https://img.shields.io/badge/-teaching-blue?style=flat-square)](https://github.com/topics/teaching)
+<!-- BADGES:END -->
+
 A comprehensive repository for managing presentation materials and educational resources for the MGMT1003 course. This repository contains structured content, documentation, and presentation materials designed to support course delivery and learning objectives.
 
 ## Overview
