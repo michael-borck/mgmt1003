@@ -2,7 +2,7 @@
 title: "AI Boardroom"
 subtitle: "Leveraging AI for Business Strategy"
 author: "Dr. Michael Borck"
-date: "9 December 2025"
+date: "March 2026"
 format: pptx
 ---
 
@@ -275,7 +275,7 @@ If you can't verify it, don't use it.
 **Resources available:**
 
 - All prompts from today's session
-- Style Mirror tool (help AI write in your voice)
+- [Style Mirror](https://stylemirror.eduserver.au/) (help AI write in your voice)
 - Deeper reading on AI concepts
 - Ethics guidelines
 

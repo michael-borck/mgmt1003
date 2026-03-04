@@ -56,6 +56,13 @@
         header h1 {
             color: var(--primary);
             font-size: 2rem;
+            margin-bottom: 0.25rem;
+        }
+
+        header .tagline {
+            color: var(--accent);
+            font-size: 1.1rem;
+            font-weight: 600;
             margin-bottom: 0.5rem;
         }
 
@@ -188,6 +195,77 @@
             margin-bottom: 0.5rem;
         }
 
+        .framework-box {
+            background: var(--light);
+            border: 1px solid var(--accent);
+            border-radius: 6px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .framework-box h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .framework-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.75rem;
+            margin-top: 0.5rem;
+        }
+
+        .framework-item {
+            text-align: center;
+            padding: 0.75rem 0.5rem;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+        }
+
+        .framework-item .letter {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent);
+        }
+
+        .framework-item .label {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        .vet-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.75rem;
+            margin-top: 0.5rem;
+        }
+
+        .vet-item {
+            padding: 0.75rem;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+        }
+
+        .vet-item .letter {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: var(--accent);
+        }
+
+        .vet-item .label {
+            font-weight: 600;
+            color: var(--text);
+            font-size: 0.95rem;
+        }
+
+        .vet-item .desc {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-top: 0.25rem;
+        }
+
         .checklist {
             list-style: none;
             padding-left: 0;
@@ -200,7 +278,7 @@
         }
 
         .checklist li::before {
-            content: "□";
+            content: "\25A1";
             position: absolute;
             left: 0;
             color: var(--accent);
@@ -218,29 +296,67 @@
         footer a {
             color: var(--accent);
         }
+
+        @media (max-width: 600px) {
+            .framework-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .vet-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>AI Boardroom: Student Handout</h1>
+        <div class="tagline">Conversation, Not Delegation</div>
         <p>Prompts and Techniques for Strategic AI Use</p>
-        <p><strong>MGMT1003</strong> | Dr. Michael Borck | 9 December 2025</p>
+        <p><strong>MGMT1003</strong> | Dr. Michael Borck</p>
         <button class="print-btn no-print" onclick="window.print()">Print / Save as PDF</button>
     </header>
 
+    <div class="framework-box">
+        <h4>The Core Principle</h4>
+        <p><strong>Conversation, Not Delegation.</strong> Think <em>with</em> AI, not <em>through</em> AI. Delegation creates dependency. Conversation builds capability. Your thinking is the secret ingredient.</p>
+    </div>
+
+    <div class="framework-box">
+        <h4>The RTCF Framework</h4>
+        <p>A simple structure for effective AI prompts. You don't need all four every time &mdash; use what's relevant.</p>
+        <div class="framework-grid">
+            <div class="framework-item">
+                <div class="letter">R</div>
+                <div class="label">Role</div>
+            </div>
+            <div class="framework-item">
+                <div class="letter">T</div>
+                <div class="label">Task</div>
+            </div>
+            <div class="framework-item">
+                <div class="letter">C</div>
+                <div class="label">Context</div>
+            </div>
+            <div class="framework-item">
+                <div class="letter">F</div>
+                <div class="label">Format</div>
+            </div>
+        </div>
+    </div>
+
     <div class="warning-box">
         <h4>The Billboard Rule</h4>
-        <p>Before sharing anything with AI, ask: "Would I be comfortable if this appeared on a billboard?" Never share passwords, personal data about others, or confidential information. Always verify AI outputs - remember Deloitte's $440,000 mistake.</p>
+        <p>Before sharing anything with AI, ask: "Would I be comfortable if this appeared on a billboard?" Never share passwords, personal data about others, or confidential information. Always verify AI outputs &mdash; remember Deloitte's $440,000 mistake.</p>
     </div>
 
     <div class="section">
         <h2 data-num="1">Board of Directors Strategy</h2>
         <p class="section-intro">Get multiple expert perspectives on a business decision in one prompt. Replace [YOUR BUSINESS IDEA] with your actual idea.</p>
-        
+
         <div class="prompt-box">
             <h3>Multi-Perspective Analysis</h3>
             <button class="copy-btn no-print" onclick="copyPrompt(this)">Copy</button>
-            <pre>I'm considering [YOUR BUSINESS IDEA]. 
+            <pre>I'm considering [YOUR BUSINESS IDEA].
 Act as my board of directors and analyse this idea from multiple perspectives:
 
 1. As CFO: What are the financial considerations, risks, and potential ROI?
@@ -265,13 +381,13 @@ For each perspective, give me 3-4 key points to consider.</pre>
     <div class="section">
         <h2 data-num="2">Devil's Advocate Technique</h2>
         <p class="section-intro">Force AI to argue against your position to find weaknesses. Replace [YOUR IDEA/POSITION] with what you want to stress-test.</p>
-        
+
         <div class="prompt-box">
             <h3>Critical Analysis</h3>
             <button class="copy-btn no-print" onclick="copyPrompt(this)">Copy</button>
             <pre>I believe that [YOUR IDEA/POSITION].
 
-Play devil's advocate. Give me the strongest possible arguments against this idea. 
+Play devil's advocate. Give me the strongest possible arguments against this idea.
 Be harsh but fair. I want to know:
 
 1. Why might this fail?
@@ -291,13 +407,13 @@ Don't hold back - I need to hear the hard truths.</pre>
     <div class="section">
         <h2 data-num="3">Reverse Prompting</h2>
         <p class="section-intro">Let AI interview YOU before giving advice. This produces much more tailored recommendations.</p>
-        
+
         <div class="prompt-box">
             <h3>AI Interviews You</h3>
             <button class="copy-btn no-print" onclick="copyPrompt(this)">Copy</button>
             <pre>I want to [YOUR GOAL - e.g., create a marketing plan, write a business proposal, prepare for an interview].
 
-Before giving me any advice, interview me first. Ask me questions one at a time 
+Before giving me any advice, interview me first. Ask me questions one at a time
 to understand:
 - My specific situation and context
 - My constraints (budget, time, resources)
@@ -324,11 +440,11 @@ Start with your first question.</pre>
     <div class="section">
         <h2 data-num="4">Bonus: Assignment Helper</h2>
         <p class="section-intro">Use AI to improve your own work without having it write for you.</p>
-        
+
         <div class="prompt-box">
             <h3>Feedback on Your Draft</h3>
             <button class="copy-btn no-print" onclick="copyPrompt(this)">Copy</button>
-            <pre>I've written a draft for [ASSIGNMENT TYPE]. I want to improve it myself, 
+            <pre>I've written a draft for [ASSIGNMENT TYPE]. I want to improve it myself,
 so please don't rewrite it.
 
 Instead, act as a critical but supportive tutor. Review my draft and tell me:
@@ -357,21 +473,52 @@ Here's my draft:
     </div>
 
     <div class="section">
-        <h2 data-num="5">Verification Checklist</h2>
-        <p class="section-intro">Always verify AI outputs before using them. Remember: AI is confident even when wrong.</p>
-        
-        <ul class="checklist">
-            <li>Can I find cited sources independently? (Search for them)</li>
-            <li>Do statistics appear in other reputable sources?</li>
+        <h2 data-num="5">VET Your AI</h2>
+        <p class="section-intro">Before using any AI output, run it through the VET framework. VET your AI like you'd vet a source.</p>
+
+        <div class="vet-grid">
+            <div class="vet-item">
+                <div class="letter">V</div>
+                <div class="label">Verify</div>
+                <div class="desc">Can I find this independently? Check sources, cross-reference claims.</div>
+            </div>
+            <div class="vet-item">
+                <div class="letter">E</div>
+                <div class="label">Explain</div>
+                <div class="desc">Can I explain this in my own words? If not, I don't understand it.</div>
+            </div>
+            <div class="vet-item">
+                <div class="letter">T</div>
+                <div class="label">Test</div>
+                <div class="desc">Does this hold up under scrutiny? Devil's advocate it, check edge cases.</div>
+            </div>
+        </div>
+
+        <ul class="checklist" style="margin-top: 1rem;">
+            <li>Can I find cited sources independently?</li>
+            <li>Can I explain the key claims in my own words?</li>
             <li>Does this make logical sense based on what I know?</li>
             <li>Would I stake my grade/reputation on this being accurate?</li>
             <li>Have I read and understood the output (not just copied it)?</li>
         </ul>
     </div>
 
+    <div class="section">
+        <h2 data-num="6">Recommended Tools</h2>
+        <p class="section-intro">Free tools that handle everything from today's session. No paid subscription needed.</p>
+
+        <div class="tip-box">
+            <h4>Your Free AI Toolkit</h4>
+            <ul>
+                <li><strong>Gemini</strong> &mdash; <a href="https://gemini.google.com">gemini.google.com</a> &mdash; General-purpose AI for brainstorming, analysis, and drafting</li>
+                <li><strong>NotebookLM</strong> &mdash; <a href="https://notebooklm.google.com">notebooklm.google.com</a> &mdash; AI grounded in your own sources (readings, notes, papers)</li>
+                <li><strong>Style Mirror</strong> &mdash; <a href="https://stylemirror.eduserver.au/">stylemirror.eduserver.au</a> &mdash; Help AI write in your voice</li>
+            </ul>
+        </div>
+    </div>
+
     <footer>
         <p>Companion Website: <a href="index.html">AI Boardroom Resources</a></p>
-        <p>Style Mirror Tool: <a href="style-mirror.html">Help AI Write in Your Voice</a></p>
         <p>Curtin Singapore | MGMT1003 Introduction to Business</p>
     </footer>
 
