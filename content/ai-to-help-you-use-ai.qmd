@@ -41,7 +41,7 @@ Here's the key: Instead of asking AI to directly solve a problem, you can ask AI
 | "Give me strategies for using AI in my teaching." | "Ask me questions to understand my teaching context, then recommend both obvious and unexpected ways I could use AI." |
 | "How do I improve my workflow?" | "Interview me about my role and responsibilities, then suggest AI tools and strategies I might not have considered." |
 
-The meta approach is more powerful because **AI asks you clarifying questions first**, learns your context, and then provides recommendations tailored to your actual situation—not generic advice for a hypothetical educator or professional.
+The meta approach is more powerful because **AI asks you clarifying questions first**, learns your context, and then provides recommendations tailored to your actual situation - not generic advice for a hypothetical educator or professional.
 
 ---
 
@@ -93,7 +93,7 @@ AI tends to suggest obvious applications first (automating grading, generating i
 By asking for both obvious *and* non-obvious recommendations, you push AI to think more creatively:
 
 - **Obvious:** Use AI to generate discussion questions for your seminar
-- **Non-obvious:** Use AI as a "skeptical peer reviewer" to critique your teaching materials before students see them
+- **Non-obvious:** Use AI as a "sceptical peer reviewer" to critique your teaching materials before students see them
 - **Non-obvious:** Use AI to help you understand common misconceptions your students hold (based on their questions and assignments)
 - **Non-obvious:** Use AI to design assessments that are harder for AI to cheat on
 
@@ -110,7 +110,7 @@ AI is remarkably good at evaluating its own suggestions. When it generates a lis
 This creates a feedback loop where recommendations get better through iteration.
 
 ### 4. **Collaborative Discovery**
-Unlike reading a guide or taking a course, this is a conversation. You're not passively receiving advice—you're actively shaping it by:
+Unlike reading a guide or taking a course, this is a conversation. You're not passively receiving advice - you're actively shaping it by:
 
 - Answering questions honestly
 - Pushing back on ideas that don't fit
@@ -141,13 +141,13 @@ Here's a simplified example of how the conversation might unfold:
 > "Definitely the administrative stuff. Tracking who needs what support, scheduling meetings, writing emails summarising policies to faculty who haven't read them, managing compliance documentation."
 
 ### **AI's Next Question:**
-> "I hear you. Now, thinking about your faculty members—what's one thing they struggle with that you think AI could help them with? And what's one thing *you* struggle with in supporting them?"
+> "I hear you. Now, thinking about your faculty members - what's one thing they struggle with that you think AI could help them with? And what's one thing *you* struggle with in supporting them?"
 
 ### **You:**
 > "Faculty struggle with writing clear learning outcomes and designing assessments. And I struggle with translating compliance requirements into plain language they actually understand."
 
 ### **AI's Next Question:**
-> "Perfect—those are solvable with AI. One more: What would success look like for you? If you had more time back and your faculty felt better supported, what would change?"
+> "Perfect - those are solvable with AI. One more: What would success look like for you? If you had more time back and your faculty felt better supported, what would change?"
 
 ### **You:**
 > "I'd have time for strategic work instead of just admin. And faculty would feel confident designing assessments without constantly asking me questions."
@@ -240,7 +240,7 @@ By asking clarifying questions, AI forces you to articulate:
 - What's possible (vs. what feels impossible)
 - What you haven't tried (because you didn't know it was possible)
 
-Often, the value of this conversation isn't the AI's recommendations—it's the *clarity you gain* about your own work by having to explain it.
+Often, the value of this conversation isn't the AI's recommendations - it's the *clarity you gain* about your own work by having to explain it.
 
 People report things like:
 
@@ -258,7 +258,7 @@ The AI is a thinking partner, not a replacement for your thinking.
 
 - Don't try to impress the AI with polished answers
 - The more honest you are about constraints and challenges, the better the recommendations
-- "We have no budget," "I don't have time to learn new tools," "My institution is skeptical of AI"—these are valuable context
+- "We have no budget," "I don't have time to learn new tools," "My institution is sceptical of AI" - these are valuable context
 
 ### **Ask Follow-Up Questions**
 
@@ -311,7 +311,7 @@ By asking AI to diagnose before recommending, you get personalised guidance inst
 
 ## Getting Started Right Now
 
-1. **Open your AI tool** (ChatGPT, Claude, Copilot, Gemini—any of them)
+1. **Open your AI tool** (ChatGPT, Claude, Copilot, Gemini - any of them)
 2. **Copy the consultation prompt** from the section above
 3. **Paste it and press send**
 4. **Answer the questions honestly** as they come

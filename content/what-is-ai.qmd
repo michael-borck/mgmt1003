@@ -20,7 +20,7 @@ That's it. No magic. No consciousness. Just software that can do things that use
 
 When we say "intelligence," we mean things like:
 
-- **Recognizing patterns** - "This photo contains a dog"
+- **Recognising patterns** - "This photo contains a dog"
 - **Making decisions** - "Approve this loan application"
 - **Understanding language** - "The customer is asking about returns"
 - **Predicting outcomes** - "This customer will probably buy this product"
@@ -122,7 +122,7 @@ Think of it like this:
 - **Layer 1:** Detects edges and lines in an image
 - **Layer 2:** Combines edges into shapes
 - **Layer 3:** Combines shapes into objects
-- **Layer 4:** Recognizes "this is a golden retriever puppy"
+- **Layer 4:** Recognises "this is a golden retriever puppy"
 
 **Good for:**
 
@@ -160,7 +160,7 @@ Think of it like this:
 
 - Writing and editing
 - Answering questions
-- Summarizing documents
+- Summarising documents
 - Explaining concepts
 - Generating content
 
@@ -199,7 +199,7 @@ Think of it like this:
 
 **Tasks with Clear Success Metrics**
 
-- Maximize clicks on ads
+- Maximise clicks on ads
 - Minimise delivery time
 - Predict customer churn
 - Optimise pricing
@@ -224,7 +224,7 @@ Think of it like this:
 - If it hasn't seen something before, it guesses
 - Can't "figure it out" the way humans do
 
-**Ethical Judgment**
+**Ethical Judgement**
 
 - AI can follow ethical rules you program
 - But it can't understand the "spirit" of ethics
@@ -325,9 +325,9 @@ AI learns from data. If your data is:
 
 **Lesson:** Data quality matters more than algorithm sophistication.
 
-### **2. AI Optimizes for What You Tell It To**
+### **2. AI Optimises for What You Tell It To**
 
-AI does exactly what you ask—which might not be what you want.
+AI does exactly what you ask - which might not be what you want.
 
 **Example:**
 

@@ -8,7 +8,7 @@ A comprehensive repository for managing presentation materials and educational r
 
 ## Overview
 
-This repository serves as a centralized hub for MGMT1003 course content, utilizing Quarto for document generation and presentation creation. The materials are organized to facilitate easy access and maintenance of course resources.
+This repository serves as a centralised hub for MGMT1003 course content, utilising Quarto for document generation and presentation creation. The materials are organised to facilitate easy access and maintenance of course resources.
 
 ## Contents
 
@@ -20,7 +20,7 @@ This repository serves as a centralized hub for MGMT1003 course content, utilizi
 
 ## Structure
 
-The repository is organized using Quarto's publishing system, with configuration managed through `_quarto.yml`. This enables consistent formatting and easy generation of multiple output formats for presentations and documents.
+The repository is organised using Quarto's publishing system, with configuration managed through `_quarto.yml`. This enables consistent formatting and easy generation of multiple output formats for presentations and documents.
 
 ## Usage
 

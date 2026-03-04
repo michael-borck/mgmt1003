@@ -24,7 +24,7 @@ Pause for 2-3 seconds before speaking.
 
 **The lesson:** AI is confident even when wrong. Verification is essential.
 
-"Their reputation—built over decades—damaged by AI-generated misinformation they didn't verify. Today, I'm going to teach you how to use AI as a strategic thinking partner - and how to avoid becoming the next headline."
+"Their reputation - built over decades - damaged by AI-generated misinformation they didn't verify. Today, I'm going to teach you how to use AI as a strategic thinking partner - and how to avoid becoming the next headline."
 :::
 
 ## Today's Session

@@ -22,12 +22,12 @@ format:
 
 That's it. That's the core idea.
 
-But from that simple task—predicting the next word—these models learned to:
+But from that simple task - predicting the next word - these models learned to:
 
 - Write essays, emails, code, and poetry
 - Answer questions about almost any topic
 - Translate languages
-- Summarize documents
+- Summarise documents
 - Explain complex concepts
 - Hold conversations
 
@@ -178,11 +178,11 @@ Customer service team uses LLM to draft responses:
 
 ---
 
-### ** Summarization and Analysis**
+### ** Summarisation and Analysis**
 
 **What they're good at:**
 
-- Summarizing long documents
+- Summarising long documents
 - Extracting key points from reports
 - Identifying themes in customer feedback
 - Creating executive summaries
@@ -190,7 +190,7 @@ Customer service team uses LLM to draft responses:
 **Example business use:**
 Legal team reviews 500-page contracts:
 
-- LLM summarizes key terms and risks
+- LLM summarises key terms and risks
 - Highlights unusual clauses
 - Human lawyer reviews flagged items
 - **Result:** 70% time savings on initial review
@@ -499,12 +499,12 @@ Finance team uses LLM to generate SQL queries. Analysts describe what data they 
 
 ### **Document Processing**
 
-**Common use:** Summarizing, extracting information from documents
+**Common use:** Summarising, extracting information from documents
 
 **How it works:**
 
 1. Upload long document (contract, report, proposal)
-2. LLM summarizes key points
+2. LLM summarises key points
 3. Extracts specific information (dates, amounts, terms)
 4. Human reviews summary and makes decisions
 
@@ -521,7 +521,7 @@ Finance team uses LLM to generate SQL queries. Analysts describe what data they 
 - Formatting issues with complex documents
 
 **Success example:**
-Legal team processes 100+ contracts per week. LLM summarizes key terms, flags unusual clauses, extracts deadlines. Lawyers review summaries instead of full documents unless flagged. Time savings: 50%.
+Legal team processes 100+ contracts per week. LLM summarises key terms, flags unusual clauses, extracts deadlines. Lawyers review summaries instead of full documents unless flagged. Time savings: 50%.
 
 ---
 
@@ -532,16 +532,16 @@ Legal team processes 100+ contracts per week. LLM summarizes key terms, flags un
 | Classify customer support tickets | Traditional AI (simpler) | Clear categories, fast, cheaper |
 | Write personalised email responses | LLM | Needs natural language generation |
 | Predict customer churn | Traditional ML | Pattern recognition in data, not language |
-| Summarize customer feedback | LLM | Natural language understanding needed |
+| Summarise customer feedback | LLM | Natural language understanding needed |
 | Fraud detection | Traditional ML | Speed and precision critical, not language |
 | Generate product descriptions | LLM | Creative language generation |
-| Optimize delivery routes | Traditional AI | Mathematical optimization, not language |
+| Optimise delivery routes | Traditional AI | Mathematical optimisation, not language |
 | Chatbot conversations | LLM | Natural dialogue needed |
 
 **Rule of thumb:**
 
-- **Use traditional AI** when you need: speed, precision, mathematical optimization, simple classification
-- **Use LLMs** when you need: natural language understanding, generation, summarization, or explanation
+- **Use traditional AI** when you need: speed, precision, mathematical optimisation, simple classification
+- **Use LLMs** when you need: natural language understanding, generation, summarisation, or explanation
 
 ---
 
@@ -646,7 +646,7 @@ Legal team processes 100+ contracts per week. LLM summarizes key terms, flags un
 - Require human review of all outputs
 - Build verification into workflow
 - Track accuracy and quality metrics
-- Maintain healthy skepticism
+- Maintain healthy scepticism
 
 ---
 
@@ -722,7 +722,7 @@ Legal team processes 100+ contracts per week. LLM summarizes key terms, flags un
 
 ### **Fine-Tuned Models**
 
-- LLMs customized for specific companies/industries
+- LLMs customised for specific companies/industries
 - Trained on your data, your style, your terminology
 - Use: Brand-specific writing, specialized technical support
 
@@ -778,9 +778,9 @@ Ask yourself:
 
 ## Summary: Five Key Takeaways
 
-1. **LLMs are "autocomplete on steroids"** - They predict likely next words based on massive training, which lets them write, explain, summarize, and converse.
+1. **LLMs are "autocomplete on steroids"** - They predict likely next words based on massive training, which lets them write, explain, summarise, and converse.
 
-2. **They're great at language tasks, not everything** - Use for writing, summarization, Q&A, translation. Don't use for math, current events, or critical factual accuracy without verification.
+2. **They're great at language tasks, not everything** - Use for writing, summarisation, Q&A, translation. Don't use for math, current events, or critical factual accuracy without verification.
 
 3. **Always have human oversight** - LLMs hallucinate, have biases, and make mistakes. Humans review before outputs go to customers or affect decisions.
 

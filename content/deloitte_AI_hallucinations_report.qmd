@@ -18,7 +18,7 @@ These incidents have prompted a partial refund in Australia and have sparked a g
 
 ### **Key Issue: AI Hallucinations**
 
-The core issue identified in these reports is "hallucination"—a phenomenon where generative AI models invent plausible-sounding but entirely false information, citations, or data points.  
+The core issue identified in these reports is "hallucination" - a phenomenon where generative AI models invent plausible-sounding but entirely false information, citations, or data points.  
 :::
 
 ## **Australia: The DEWR Report Incident**

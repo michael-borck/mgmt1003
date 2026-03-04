@@ -161,10 +161,10 @@ Use this as a quick sense‑check after you’ve applied the 5‑step framework.
 
 Try this once with a real or realistic problem:
 
-1. **Choose a business or educational challenge** (e.g. staff onboarding, student engagement, assessment redesign, marketing for a new program).
+1. **Choose a business or educational challenge** (e.g. staff onboarding, student engagement, assessment redesign, marketing for a new programme).
 2. **Ask an AI tool for a recommendation or plan.**
 3. **Apply the 5‑step business critique framework** and note at least one red flag for each step.
 4. **Ask follow‑up questions** (using the conversation templates) until you have a version you might realistically consider.
 5. **Document the interaction** using the short template above.
 
-This exercise builds professional judgement about AI recommendations—a critical skill you can apply throughout your career.
+This exercise builds professional judgement about AI recommendations - a critical skill you can apply throughout your career.
