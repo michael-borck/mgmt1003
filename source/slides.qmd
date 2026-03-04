@@ -265,6 +265,26 @@ If you can't verify it, don't use it.
 5. **Always verify** - never trust blindly
 
 
+## Free AI Tools You Can Use Today
+
+| Tool | Free Limit | Best For |
+|---|---|---|
+| **NotebookLM** | Generous | Source-grounded research, no hallucination |
+| **ChatGPT** | ~10 msgs / 5 hrs | General brainstorming and analysis |
+| **Claude** | ~15 msgs / 5 hrs | Detailed writing and reasoning |
+| **Gemini** | ~5 prompts / day | Google Workspace integration |
+| **Grok** | 10-15 / 2 hrs | Fast reset cycle, frequent use |
+| **Meta AI** | Free, no sign-up | Quick questions, Llama 4 models |
+
+::: {.notes}
+**Key message:** You don't need a paid subscription. Spread your prompts across multiple free tools.
+
+- **NotebookLM** is your workhorse - upload sources, no hallucination, generous limits
+- Use ChatGPT, Claude, Gemini, Grok, and Meta AI for general conversations
+- Free limits change frequently - check the handout for latest details
+- **Local option:** Msty or Ollama let you run AI on your own laptop with no limits and full privacy
+:::
+
 ## Questions
 
 ![](images/questions.png)
@@ -275,6 +295,7 @@ If you can't verify it, don't use it.
 **Resources available:**
 
 - All prompts from today's session
+- Free AI tools handout (with tips for maximising free tiers)
 - [Style Mirror](https://stylemirror.eduserver.au/) (help AI write in your voice)
 - Deeper reading on AI concepts
 - Ethics guidelines
