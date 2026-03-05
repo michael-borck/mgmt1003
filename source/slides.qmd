@@ -1,103 +1,197 @@
 ---
-title: "AI Boardroom"
-subtitle: "Leveraging AI for Business Strategy"
+title: "Conversation, Not Delegation"
+subtitle: "Using AI for Business Strategy"
 author: "Dr. Michael Borck"
 date: "March 2026"
-format: pptx
+format:
+  revealjs:
+    theme: dark
+    slide-number: true
+    embed-resources: true
+    hash-type: number
+    transition: fade
+    width: 1280
+    height: 720
+    margin: 0.1
+    center: true
 ---
 
-![](images/440000.png)
+## {background-color="black"}
+
+![](images/440000.png){fig-align="center"}
+
+::: {.incremental}
+- **$440,000** paid to Deloitte for an AI-generated welfare report
+- It contained **fabricated citations** — fake studies, made-up quotes
+- Reputation built over decades — damaged in days
+:::
 
 ::: {.notes}
 Pause for 2-3 seconds before speaking.
 
-"$440,000. That's what the Australian government paid Deloitte for a welfare review report earlier this year."
+"$440,000. That's what the Australian government paid Deloitte for a welfare review report earlier this year. Reports contained fabricated citations. Canada had a similar incident — $1.6 million healthcare report with incorrect citations. Their reputation — built over decades — damaged by AI-generated misinformation they didn't verify. Today, I'm going to teach you how to use AI as a strategic thinking partner — and how to avoid becoming the next headline."
+:::
 
-## The Deloitte Case
+## Quick Poll: Where Are You With AI? {.center}
 
-**What happened:**
+<br>
 
-- Deloitte used AI (GPT-4) to draft government reports
-- Reports contained **fabricated citations** - fake studies, made-up quotes
-- Australia: $440,000 welfare review - partial refund issued
-- Canada: $1.6 million healthcare report - 4 incorrect citations found
+![](images/ai-poll-qr.png){width=400 fig-align="center"}
 
-**The lesson:** AI is confident even when wrong. Verification is essential.
+[forms.cloud.microsoft/r/4BmAZXG3N5](https://forms.cloud.microsoft/r/4BmAZXG3N5)
 
-"Their reputation - built over decades - damaged by AI-generated misinformation they didn't verify. Today, I'm going to teach you how to use AI as a strategic thinking partner - and how to avoid becoming the next headline."
+::: {.notes}
+Give students 1-2 minutes to scan and respond. Share results live if the form supports it.
 :::
 
 ## Today's Session
 
-1. **The AI Mindset** - How to think about AI
-2. **Board of Directors Strategy** - Multi-perspective analysis
-3. **Devil's Advocate** - Stress-testing ideas
-4. **Reverse Prompting** - Let AI interview you
-5. **Ethics & The Trap** - Using AI responsibly
+1. **The AI Mindset** — Conversation, not delegation
+2. **RTCF Framework** — Structure better prompts
+3. **Board of Directors** — Multi-perspective analysis
+4. **Devil's Advocate** — Stress-testing ideas
+5. **Reverse Prompting** — Let AI interview you
+6. **VET Framework** — Verify everything
 
 **Companion Website:** [Link in chat]
 
-## Part 1: The AI Mindset
-
-![](images/ai-mindset)
-
-
-## AI is a Smart Intern Who Hallucinates
-
-![](images/smart-intern.png)
-
 ::: {.notes}
-**Key insight:** AI is a **reasoning engine**, not a search engine
-
-- Google finds information that exists
-- AI generates responses based on patterns
-- It doesn't "know" things - it predicts likely responses
-
-**The Intern Analogy:**
-
-> Think of AI like a brilliant intern. They're eager, fast, and can do amazing work. But they might confidently present completely made-up statistics.
-
+The core theme today: think WITH AI, not THROUGH AI. AI is a conversation partner, not a vending machine.
 :::
 
+## The Real Problem {.center}
 
+:::: {.columns}
+
+::: {.column width="50%"}
+### Delegation Mindset
+
+- "Write me a business plan"
+- "Give me the answer"
+- Copy-paste the output
+- Hope it's correct
+:::
+
+::: {.column width="50%"}
+### Conversation Mindset
+
+- "Help me think through this"
+- "What am I missing?"
+- Iterate and refine together
+- Verify and own the result
+:::
+
+::::
+
+::: {.notes}
+Most people treat AI like a vending machine — put in a prompt, get an answer. That's delegation. What we want is conversation — a back-and-forth where AI helps you think better.
+:::
+
+## Conversation, Not Delegation {.center}
+
+<br>
+
+> AI should **challenge your thinking**, not replace it.
+
+<br>
+
+Your job is **Editor-in-Chief**, not stenographer.
+
+::: {.notes}
+This is the single most important idea from today. If you remember nothing else, remember this.
+:::
+
+## AI is a Smart Intern
+
+![](images/smart-intern.png){fig-align="center" height=350}
+
+::: {.incremental}
+- AI is a **reasoning engine**, not a search engine
+- It doesn't "know" things — it predicts likely responses
+- Brilliant, fast, eager... but will confidently make things up
+:::
+
+::: {.notes}
+Google finds information that exists. AI generates responses based on patterns. Think of AI like a brilliant intern — eager, fast, amazing work, but might confidently present completely made-up statistics.
+:::
 
 ## The Golden Rule
 
-![](images/robot-think.png)
+![](images/robot-think.png){fig-align="center" height=350}
+
+> The moment you stop questioning AI's output is the moment you become Deloitte.
 
 ::: {.notes}
-**AI should challenge your thinking, not replace it.**
-
-The moment you stop questioning AI's output is the moment you become Deloitte.
-
-**Your role:** Editor-in-Chief, not stenographer.
-
+AI should challenge your thinking, not replace it. Your role is Editor-in-Chief, not stenographer. Always question, always verify.
 :::
 
+## RTCF Framework {.center}
 
-## Part 2: Board of Directors Strategy
+:::: {.columns}
 
-![](images/board-of-directors.png)
+::: {.column width="25%"}
+### Role
+Tell AI **who** to be
+
+*"Act as a CFO..."*
+:::
+
+::: {.column width="25%"}
+### Task
+Tell AI **what** to do
+
+*"Analyse this idea..."*
+:::
+
+::: {.column width="25%"}
+### Context
+Give **background**
+
+*"For a university market..."*
+:::
+
+::: {.column width="25%"}
+### Format
+Specify **output**
+
+*"Give me 3-4 bullet points..."*
+:::
+
+::::
+
+<br>
+
+Better prompts = better conversations
 
 ::: {.notes}
-**The concept:** Get multiple expert viewpoints in one prompt
-
-- CFO perspective (financial)
-- Marketing Director (customers)
-- Operations Manager (practical)
-- Legal Counsel (compliance)
-
-**Why it works:** Catches blind spots you'd miss thinking alone
+RTCF gives you a simple structure for any prompt. You don't need all four every time, but the more context you give, the better the response. This is the difference between "write me a marketing plan" and a genuinely useful conversation.
 :::
 
+## Part 1: The AI Mindset
+
+![](images/ai-mindset.png){fig-align="center"}
+
+::: {.notes}
+Transition to the first technique. We've covered the mindset — now let's put it into practice with three powerful techniques.
+:::
+
+## Board of Directors Strategy
+
+![](images/board-of-directors.png){fig-align="center" height=400}
+
+Get **multiple expert viewpoints** in one prompt — catches blind spots you'd miss thinking alone.
+
+::: {.notes}
+The concept: CFO perspective (financial), Marketing Director (customers), Operations Manager (practical), Legal Counsel (compliance). Why it works: catches blind spots you'd miss thinking alone.
+:::
 
 ## Demo: Board of Directors Prompt
 
 ```
-I'm considering opening a cashless coffee shop 
-near a university campus. 
+I'm considering opening a cashless coffee shop
+near a university campus.
 
-Act as my board of directors and analyse this 
+Act as my board of directors and analyse this
 idea from multiple perspectives:
 
 1. As CFO: Financial considerations, risks, ROI?
@@ -109,47 +203,27 @@ For each perspective, give me 3-4 key points.
 ```
 
 ::: {.notes}
-Switch to browser and run this demo in Gemini.
-
-## Your Turn: Try It
-
-Think of a business idea:
-
-- A meal prep delivery service for students
-- A tutoring app connecting students with graduates  
-- A sustainable fashion rental service
-- Your own idea
-
-**Try the Board of Directors prompt with your idea.**
-
+Switch to browser and run this demo in Gemini. After the demo, encourage students to try with their own business idea — meal prep delivery, tutoring app, sustainable fashion rental, or their own idea.
 :::
 
+## Devil's Advocate — Overcoming Confirmation Bias
 
-## Part 3: Devil's Advocate - Overcoming Confirmation Bias
+![](images/devils-advocate.png){fig-align="center" height=400}
 
-![](images/devils-advocate.png)
+Force AI to argue **against** your position — key phrases: *"Be harsh but fair"*, *"Don't hold back"*
 
 ::: {.notes}
-
-**The problem:** We look for evidence that supports our ideas
-
-**The solution:** Force AI to argue against your position
-
-**Key phrases that work:**
-
-- "Be harsh but fair"
-- "Don't hold back"
-- "I need to hear the hard truths"
+The problem: we look for evidence that supports our ideas. The solution: force AI to argue against your position. Giving AI permission to be critical produces better feedback.
 :::
 
 ## Demo: Devil's Advocate Prompt
 
 ```
-I believe that a cashless coffee shop near 
+I believe that a cashless coffee shop near
 a university is a great business idea.
 
-Play devil's advocate. Give me the strongest 
-possible arguments against this idea. 
+Play devil's advocate. Give me the strongest
+possible arguments against this idea.
 Be harsh but fair. I want to know:
 
 1. Why might this fail?
@@ -164,31 +238,23 @@ Don't hold back - I need to hear the hard truths.
 Switch to browser and run this demo. Point out how giving AI permission to be critical produces better feedback.
 :::
 
-## Part 4: Reverse Prompting - When You Don't Know What to Ask
+## Reverse Prompting — When You Don't Know What to Ask
 
-![](images/reverse-prompting.png)
+![](images/reverse-prompting.png){fig-align="center" height=400}
 
+Let AI **interview you** first — recommendations become tailored, not generic.
 
 ::: {.notes}
-
-**The problem:** Sometimes the hardest part is knowing what questions to ask
-
-**The solution:** Let AI interview YOU first
-
-**Why it works:** 
-
-- AI understands your specific context
-- Recommendations become tailored, not generic
-- You discover what you don't know
+The problem: sometimes the hardest part is knowing what questions to ask. The solution: let AI interview YOU first. AI understands your specific context, recommendations become tailored, you discover what you don't know.
 :::
 
 ## Demo: Reverse Prompting
 
 ```
-I want to create a marketing plan for a new 
+I want to create a marketing plan for a new
 cashless coffee shop near a university.
 
-Before giving me any advice, interview me first. 
+Before giving me any advice, interview me first.
 Ask me questions one at a time to understand:
 - My target customers
 - My budget and timeline
@@ -196,7 +262,7 @@ Ask me questions one at a time to understand:
 - My experience in this industry
 - Any constraints I'm working with
 
-After you understand my situation, then give 
+After you understand my situation, then give
 me tailored marketing recommendations.
 
 Start with your first question.
@@ -206,64 +272,66 @@ Start with your first question.
 Run this demo. Answer 2-3 questions from the AI to show how the conversation builds context.
 :::
 
-## Part 5: Ethics - The Billboard Rule
+## The Billboard Rule
 
-![](images/billboard-rule.png)
+![](images/billboard-rule.png){fig-align="center" height=350}
+
+> Before sharing anything with AI, ask: **"Would I be comfortable if this appeared on a billboard?"**
+
+Never share: passwords, personal info about others, confidential data
 
 ::: {.notes}
-
-**Before sharing anything with AI, ask:**
-
-> "Would I be comfortable if this appeared on a billboard?"
-
-**Never share:**
-
-- Passwords or API keys
-- Personal information about others
-- Confidential business data
-- Anything you wouldn't want made public
+This is your privacy filter. AI conversations may be used for training. Treat every prompt as potentially public.
 :::
 
 ## The Hallucination Trap
 
-![](images/hallucination-trap.png)
+![](images/hallucination-trap.png){fig-align="center" height=350}
 
-::: {.notes}
-
-Remember Deloitte? Here's why it happened:
-
-1. **AI doesn't know it's lying** - It generates plausible text
-2. **Confidence ≠ Accuracy** - AI sounds equally confident right or wrong
-3. **Pattern matching, not truth** - AI predicts likely responses
-
+::: {.incremental}
+1. **AI doesn't know it's lying** — it generates plausible text
+2. **Confidence ≠ Accuracy** — sounds equally confident right or wrong
+3. **Pattern matching, not truth** — predicts likely responses
 :::
 
-
-## The Three Verification Questions
-
-![](images/check.png)
-
 ::: {.notes}
-Before trusting any AI output, ask:
-
-1. **Can I find this source independently?**
-2. **Does this statistic appear elsewhere?**
-3. **Does this make logical sense?**
-
-If you can't verify it, don't use it.
-
+Remember Deloitte? This is why it happened. AI generates plausible text, it doesn't verify facts. It sounds equally confident whether it's right or wrong.
 :::
 
-![](images/key-takeaways.png)
+## VET Framework — Verify Everything {.center}
 
-## Key Takeaways
+:::: {.columns}
 
-1. AI is a thinking partner, not a replacement for thinking
-2. Use **multi-perspective prompting** (Board of Directors)
-3. **Challenge your ideas** (Devil's Advocate)
-4. Let AI **interview you** for better context (Reverse Prompting)
-5. **Always verify** - never trust blindly
+::: {.column width="33%"}
+### Verify
+Can you **find this source** independently?
 
+*Search for the claim yourself*
+:::
+
+::: {.column width="33%"}
+### Explain
+Can AI **explain its reasoning**?
+
+*Ask "why?" and "how do you know?"*
+:::
+
+::: {.column width="33%"}
+### Test
+Does it **make logical sense**?
+
+*Cross-check with other tools*
+:::
+
+::::
+
+<br>
+
+If you can't verify it, **don't use it**.
+
+::: {.notes}
+VET replaces the old "three verification questions" with a memorable framework. Verify: find the source independently. Explain: ask AI to show its reasoning. Test: cross-check with other tools and your own logic. If you can't verify it, don't use it.
+:::
 
 ## Free AI Tools You Can Use Today
 
@@ -277,28 +345,31 @@ If you can't verify it, don't use it.
 | **Meta AI** | Free, no sign-up | Quick questions, Llama 4 models |
 
 ::: {.notes}
-**Key message:** You don't need a paid subscription. Spread your prompts across multiple free tools.
-
-- **NotebookLM** is your workhorse - upload sources, no hallucination, generous limits
-- Use ChatGPT, Claude, Gemini, Grok, and Meta AI for general conversations
-- Free limits change frequently - check the handout for latest details
-- **Local option:** Msty or Ollama let you run AI on your own laptop with no limits and full privacy
+You don't need a paid subscription. Spread your prompts across multiple free tools. NotebookLM is your workhorse — upload sources, no hallucination, generous limits. Free limits change frequently — check the handout for latest details.
 :::
 
-## Questions
+## {background-color="black"}
 
-![](images/questions.png)
-![](images/website.png)
+![](images/key-takeaways.png){fig-align="center" height=300}
+
+::: {.incremental}
+1. AI is a **conversation partner**, not a replacement for thinking
+2. Use **RTCF** to structure better prompts
+3. Get **multiple perspectives** (Board of Directors)
+4. **Challenge your ideas** (Devil's Advocate)
+5. Let AI **interview you** for better context (Reverse Prompting)
+6. **VET everything** — verify, explain, test
+:::
 
 ::: {.notes}
+Recap the key messages. Emphasise conversation over delegation. These techniques work with any AI tool.
+:::
 
-**Resources available:**
+## Questions?
 
-- All prompts from today's session
-- Free AI tools handout (with tips for maximising free tiers)
-- [Style Mirror](https://stylemirror.eduserver.au/) (help AI write in your voice)
-- Deeper reading on AI concepts
-- Ethics guidelines
+![](images/questions.png){fig-align="center" height=300}
+![](images/website.png){fig-align="center" height=150}
 
-Thank you for your attention. I'm happy to take any questions.
+::: {.notes}
+Resources available: all prompts from today's session, free AI tools handout, Style Mirror tool, deeper reading on AI concepts, ethics guidelines. Thank you for your attention.
 :::
