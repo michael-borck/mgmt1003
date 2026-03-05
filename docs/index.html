@@ -3,325 +3,522 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversation, Not Delegation - Companion Website</title>
+    <title>Conversation, Not Delegation - MGMT1003</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #1a365d;
-            --secondary: #2c5282;
-            --accent: #3182ce;
-            --light: #ebf8ff;
-            --text: #2d3748;
-            --text-light: #4a5568;
-            --border: #e2e8f0;
-            --white: #ffffff;
+            --bg: #fafafa;
+            --surface: #ffffff;
+            --surface-hover: #f5f7fa;
+            --border: #e4e7ec;
+            --border-hover: #c0c7d1;
+            --text: #1a1a2e;
+            --text-secondary: #5a5f7a;
+            --accent: #3b6df0;
+            --accent-hover: #2b55cc;
+            --accent-subtle: rgba(59, 109, 240, 0.08);
+            --warning-bg: #fffbeb;
+            --warning-border: #f59e0b;
+            --warning-text: #92400e;
+            --radius: 12px;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.06);
+            --shadow-md: 0 4px 16px rgba(0,0,0,0.06), 0 2px 4px rgba(0,0,0,0.04);
+            --shadow-lg: 0 12px 40px rgba(0,0,0,0.08);
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 5rem;
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             line-height: 1.6;
             color: var(--text);
-            background: var(--white);
+            background: var(--bg);
+            -webkit-font-smoothing: antialiased;
         }
 
-        header {
-            background: var(--primary);
-            color: var(--white);
-            padding: 2rem;
+        /* --- Navigation --- */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(250, 250, 250, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            padding: 0.75rem 2rem;
+        }
+
+        nav .nav-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav .nav-brand {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        nav .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+
+        nav .nav-links a {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        nav .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        /* --- Hero --- */
+        .hero {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 5rem 2rem 4rem;
             text-align: center;
         }
 
-        header h1 {
-            font-size: 2.5rem;
+        .hero .badge {
+            display: inline-block;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--accent);
+            background: var(--accent-subtle);
+            padding: 0.35rem 0.85rem;
+            border-radius: 20px;
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.02em;
+        }
+
+        .hero h1 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            font-weight: 700;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+            color: var(--text);
+        }
+
+        .hero .subtitle {
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            line-height: 1.7;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-hover);
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-secondary {
+            background: var(--surface);
+            color: var(--text);
+            border: 1px solid var(--border);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--border-hover);
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-sm);
+        }
+
+        /* --- Sections --- */
+        .section {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .section-header {
+            margin-bottom: 2.5rem;
+        }
+
+        .section-header .label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
             margin-bottom: 0.5rem;
         }
 
-        header p {
-            font-size: 1.1rem;
-            opacity: 0.9;
+        .section-header h2 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: clamp(1.4rem, 3vw, 1.8rem);
+            font-weight: 700;
+            color: var(--text);
+            line-height: 1.3;
         }
 
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 2rem;
+        .section-header p {
+            color: var(--text-secondary);
+            margin-top: 0.5rem;
+            max-width: 600px;
         }
 
-        .hero {
-            background: var(--light);
-            padding: 2rem;
-            border-radius: 8px;
-            margin-bottom: 2rem;
-            border-left: 4px solid var(--accent);
-        }
-
-        .hero h2 {
-            color: var(--primary);
-            margin-bottom: 1rem;
-        }
-
-        .quick-links {
+        /* --- Card Grid --- */
+        .card-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-bottom: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
         }
 
-        .quick-link {
-            background: var(--white);
-            border: 2px solid var(--border);
-            border-radius: 8px;
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
             padding: 1.5rem;
             text-decoration: none;
             color: var(--text);
             transition: all 0.2s ease;
+            position: relative;
         }
 
-        .quick-link:hover {
-            border-color: var(--accent);
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--accent), transparent);
+            border-radius: var(--radius) var(--radius) 0 0;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        .card:hover {
+            border-color: var(--border-hover);
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            box-shadow: var(--shadow-md);
         }
 
-        .quick-link h3 {
-            color: var(--primary);
-            margin-bottom: 0.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
+        .card:hover::before {
+            opacity: 1;
         }
 
-        .quick-link p {
-            color: var(--text-light);
+        .card h3 {
+            font-family: 'JetBrains Mono', monospace;
             font-size: 0.95rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--text);
         }
 
-        .section {
-            margin-bottom: 3rem;
+        .card p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.55;
         }
 
-        .section h2 {
-            color: var(--primary);
-            border-bottom: 2px solid var(--border);
-            padding-bottom: 0.5rem;
+        .card .card-badge {
+            display: inline-block;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem;
+            font-weight: 500;
+            background: var(--accent-subtle);
+            color: var(--accent);
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+            margin-left: 0.4rem;
+            vertical-align: middle;
+        }
+
+        /* --- Warning Box --- */
+        .callout {
+            background: var(--warning-bg);
+            border: 1px solid var(--warning-border);
+            border-radius: var(--radius);
+            padding: 1.25rem 1.5rem;
+            margin: 2rem auto;
+            max-width: 1100px;
+        }
+
+        .callout h4 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--warning-text);
+            margin-bottom: 0.35rem;
+        }
+
+        .callout p {
+            font-size: 0.9rem;
+            color: var(--warning-text);
+            line-height: 1.55;
+        }
+
+        .callout-pad {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        /* --- Prompt Blocks --- */
+        .prompt-section {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .prompt-block {
             margin-bottom: 1.5rem;
         }
 
-        .guides-grid {
+        .prompt-block h3 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 0.75rem;
+        }
+
+        .prompt-block pre {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.25rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            line-height: 1.65;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            color: var(--text);
+        }
+
+        /* --- Tools Section --- */
+        .tools-highlight {
+            background: var(--accent-subtle);
+            border-radius: var(--radius);
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .tool-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .tool-card h4 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 0.35rem;
+        }
+
+        .tool-card p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.55;
+            margin-bottom: 0.75rem;
+        }
+
+        .tool-card a {
+            color: var(--accent);
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .tool-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- Recommended Tools Grid --- */
+        .tools-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 1rem;
         }
 
-        .guide-card {
-            background: var(--white);
-            border: 1px solid var(--border);
-            border-radius: 6px;
-            padding: 1.25rem;
-            text-decoration: none;
-            color: var(--text);
-            transition: all 0.2s ease;
-        }
-
-        .guide-card:hover {
-            background: var(--light);
-            border-color: var(--accent);
-        }
-
-        .guide-card h4 {
-            color: var(--secondary);
-            margin-bottom: 0.5rem;
-        }
-
-        .guide-card p {
-            color: var(--text-light);
-            font-size: 0.9rem;
-        }
-
-        .tools-section {
-            background: var(--light);
-            padding: 2rem;
-            border-radius: 8px;
-        }
-
-        .tool-feature {
-            background: var(--white);
-            border: 1px solid var(--border);
-            border-radius: 6px;
-            padding: 1.5rem;
-            margin-top: 1rem;
-        }
-
-        .tool-feature h4 {
-            color: var(--primary);
-            margin-bottom: 0.5rem;
-        }
-
-        .btn {
-            display: inline-block;
-            background: var(--accent);
-            color: var(--white);
-            padding: 0.75rem 1.5rem;
-            border-radius: 6px;
-            text-decoration: none;
-            margin-top: 1rem;
-            transition: background 0.2s ease;
-        }
-
-        .btn:hover {
-            background: var(--secondary);
-        }
-
+        /* --- Footer --- */
         footer {
-            background: var(--primary);
-            color: var(--white);
+            max-width: 1100px;
+            margin: 0 auto;
             padding: 2rem;
+            border-top: 1px solid var(--border);
             text-align: center;
-            margin-top: 3rem;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
         }
 
         footer a {
-            color: var(--light);
+            color: var(--accent);
+            text-decoration: none;
         }
 
-        .badge {
-            display: inline-block;
-            background: var(--accent);
-            color: var(--white);
-            font-size: 0.75rem;
-            padding: 0.2rem 0.5rem;
-            border-radius: 4px;
-            margin-left: 0.5rem;
+        footer a:hover {
+            text-decoration: underline;
         }
 
-        .warning-box {
-            background: #fffbeb;
-            border: 1px solid #f59e0b;
-            border-left: 4px solid #f59e0b;
-            padding: 1rem;
-            border-radius: 6px;
-            margin: 1rem 0;
-        }
-
-        .warning-box h4 {
-            color: #b45309;
-            margin-bottom: 0.5rem;
-        }
-
+        /* --- Responsive --- */
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 1.8rem;
-            }
-            
-            .container {
-                padding: 1rem;
-            }
-            
-            .quick-links {
-                grid-template-columns: 1fr;
-            }
+            .hero { padding: 3rem 1.5rem 2.5rem; }
+            .section, .prompt-section { padding: 3rem 1.5rem; }
+            .card-grid { grid-template-columns: 1fr; }
+            nav .nav-links { display: none; }
+            .callout-pad { padding-left: 1.5rem; padding-right: 1.5rem; }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Conversation, Not Delegation</h1>
-        <p>Using AI for Business Strategy - Companion Website</p>
-    </header>
 
-    <div class="container">
-        <div class="hero">
-            <h2>Welcome, MGMT1003 Students</h2>
-            <p>This companion website contains all the resources from today's session on using AI as a strategic thinking partner. The core principle: <strong>Conversation, Not Delegation</strong>. Think <em>with</em> AI, not <em>through</em> AI. Your thinking is the secret ingredient.</p>
-            <p style="margin-top: 0.5rem;">Bookmark this page for future reference - you'll find prompts to try, deeper reading on AI concepts, and tools to improve your AI interactions.</p>
+    <nav>
+        <div class="nav-inner">
+            <a href="#" class="nav-brand">MGMT1003</a>
+            <ul class="nav-links">
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#guides">Guides</a></li>
+                <li><a href="#prompts">Prompts</a></li>
+                <li><a href="#tools">Tools</a></li>
+            </ul>
         </div>
+    </nav>
 
-        <div class="quick-links">
-            <a href="source/slides.html" class="quick-link">
+    <section class="hero">
+        <div class="badge">MGMT1003 Companion Site</div>
+        <h1>Conversation,<br>Not Delegation</h1>
+        <p class="subtitle">Think <em>with</em> AI, not <em>through</em> AI. Your thinking is the secret ingredient. This site has everything from today's session.</p>
+        <div class="hero-actions">
+            <a href="source/slides.html" class="btn btn-primary">View Slides</a>
+            <a href="handout.html" class="btn btn-secondary">Student Handout</a>
+        </div>
+    </section>
+
+    <section id="resources" class="section">
+        <div class="section-header">
+            <div class="label">Quick Access</div>
+            <h2>Session Resources</h2>
+        </div>
+        <div class="card-grid">
+            <a href="source/slides.html" class="card">
                 <h3>Presentation Slides</h3>
-                <p>View the full slide deck from today's session in your browser.</p>
+                <p>The full slide deck from today's session, viewable in your browser.</p>
             </a>
-            <a href="handout.html" class="quick-link">
+            <a href="handout.html" class="card">
                 <h3>Student Handout</h3>
-                <p>All the prompts from today's session, ready to copy and paste into your AI tool of choice.</p>
+                <p>All prompts ready to copy and paste into your AI tool of choice.</p>
             </a>
-            <a href="https://stylemirror.eduserver.au/" class="quick-link">
-                <h3>Style Mirror Tool</h3>
-                <p>Interactive tool to help AI write in your voice. Great for assignments and professional communication.</p>
+            <a href="https://stylemirror.eduserver.au/" class="card">
+                <h3>Style Mirror</h3>
+                <p>Help AI write in your voice. Great for assignments and professional writing.</p>
             </a>
-            <a href="content/deloitte_AI_hallucinations_report.html" class="quick-link">
+            <a href="content/deloitte_AI_hallucinations_report.html" class="card">
                 <h3>Deloitte Case Study</h3>
-                <p>Full details on the AI hallucination incidents we discussed in the opening.</p>
+                <p>The $440K AI hallucination incident we discussed in the opening.</p>
             </a>
-            <a href="free-ai-tools.html" class="quick-link">
-                <h3>Free AI Tools Guide</h3>
-                <p>Comparison of free AI tools, usage limits, and strategies for maximising free tiers.</p>
+            <a href="free-ai-tools.html" class="card">
+                <h3>Free AI Tools</h3>
+                <p>Comparison of free tools, usage limits, and strategies for maximising free tiers.</p>
             </a>
         </div>
+    </section>
 
-        <div class="warning-box">
-            <h4>Remember: The Billboard Rule</h4>
-            <p>Before sharing anything with AI, ask yourself: "Would I be comfortable if this appeared on a billboard?" Never share passwords, personal data about others, or confidential information.</p>
-        </div>
+    <div class="callout callout-pad">
+        <h4>The Billboard Rule</h4>
+        <p>Before sharing anything with AI, ask yourself: "Would I be comfortable if this appeared on a billboard?" Never share passwords, personal data about others, or confidential information.</p>
+    </div>
 
-        <div class="section">
+    <section id="guides" class="section">
+        <div class="section-header">
+            <div class="label">Deep Dives</div>
             <h2>Core Guides</h2>
-            <div class="guides-grid">
-                <a href="content/what-is-ai.html" class="guide-card">
-                    <h4>What is AI?</h4>
-                    <p>Understand what AI actually is, how it works, and what it can (and can't) do.</p>
-                </a>
-                <a href="content/what-are-llms.html" class="guide-card">
-                    <h4>What are LLMs?</h4>
-                    <p>Deep dive into Large Language Models - the technology behind ChatGPT, Gemini, and Claude.</p>
-                </a>
-                <a href="content/seven-techniques.html" class="guide-card">
-                    <h4>Seven Prompting Techniques</h4>
-                    <p>Advanced techniques including reverse prompting, multi-perspective analysis, devil's advocate, and more.</p>
-                </a>
-                <a href="content/critique-toolkit.html" class="guide-card">
-                    <h4>AI Critique Toolkit</h4>
-                    <p>How to use AI to critically analyse ideas, strategies, and decisions.</p>
-                </a>
-                <a href="content/ethics-integrity.html" class="guide-card">
-                    <h4>Ethics & Integrity</h4>
-                    <p>Using AI responsibly in academic and professional contexts.</p>
-                </a>
-                <a href="content/how-to-tell-whats-real-online.html" class="guide-card">
-                    <h4>Evaluating Online Information</h4>
-                    <p>Critical skills for verifying AI outputs and online sources.</p>
-                </a>
-                <a href="content/ai-to-help-you-use-ai.html" class="guide-card">
-                    <h4>Using AI to Learn AI</h4>
-                    <p>Meta-skill: how to use AI tools to improve your AI skills.</p>
-                </a>
-            </div>
+            <p>Go deeper on the concepts from today's session.</p>
+        </div>
+        <div class="card-grid">
+            <a href="content/what-is-ai.html" class="card">
+                <h3>What is AI?</h3>
+                <p>What AI actually is, how it works, and what it can and can't do.</p>
+            </a>
+            <a href="content/what-are-llms.html" class="card">
+                <h3>What are LLMs?</h3>
+                <p>The technology behind ChatGPT, Gemini, and Claude.</p>
+            </a>
+            <a href="content/seven-techniques.html" class="card">
+                <h3>Seven Prompting Techniques</h3>
+                <p>Reverse prompting, multi-perspective analysis, devil's advocate, and more.</p>
+            </a>
+            <a href="content/critique-toolkit.html" class="card">
+                <h3>AI Critique Toolkit</h3>
+                <p>Use AI to critically analyse ideas, strategies, and decisions.</p>
+            </a>
+            <a href="content/ethics-integrity.html" class="card">
+                <h3>Ethics & Integrity</h3>
+                <p>Using AI responsibly in academic and professional contexts.</p>
+            </a>
+            <a href="content/how-to-tell-whats-real-online.html" class="card">
+                <h3>Evaluating Online Information</h3>
+                <p>Critical skills for verifying AI outputs and online sources.</p>
+            </a>
+            <a href="content/ai-to-help-you-use-ai.html" class="card">
+                <h3>Using AI to Learn AI</h3>
+                <p>Meta-skill: use AI tools to improve your AI skills.</p>
+            </a>
+        </div>
+    </section>
+
+    <section id="prompts" class="prompt-section">
+        <div class="section-header">
+            <div class="label">Copy & Paste</div>
+            <h2>Session Prompts</h2>
+            <p>The key prompts from today, ready to use.</p>
         </div>
 
-        <div class="section tools-section">
-            <h2>Interactive Tools</h2>
-            <div class="tool-feature">
-                <h4>Style Mirror</h4>
-                <p>Help AI understand your unique writing voice. Upload a sample of your writing and get a reusable style prompt that makes AI write like you.</p>
-                <a href="https://stylemirror.eduserver.au/" class="btn">Open Style Mirror</a>
-            </div>
-            <div class="tool-feature">
-                <h4>NotebookLM <span class="badge">Free</span></h4>
-                <p>Google's AI research tool. Upload your readings, lecture notes, or papers and have AI conversations grounded only in your sources. No hallucination. Great for assignment prep and exam revision.</p>
-                <a href="https://notebooklm.google.com" class="btn">Open NotebookLM</a>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Session Prompts - Quick Reference</h2>
-            
-            <h3 style="margin-top: 1.5rem; color: var(--secondary);">Board of Directors Strategy</h3>
-            <pre style="background: #f7fafc; padding: 1rem; border-radius: 6px; overflow-x: auto; font-size: 0.9rem; border: 1px solid var(--border);">I'm considering [YOUR BUSINESS IDEA]. 
+        <div class="prompt-block">
+            <h3>Board of Directors Strategy</h3>
+            <pre>I'm considering [YOUR BUSINESS IDEA].
 Act as my board of directors and analyse this idea from multiple perspectives:
 
 1. As CFO: What are the financial considerations, risks, and potential ROI?
@@ -330,11 +527,13 @@ Act as my board of directors and analyse this idea from multiple perspectives:
 4. As Legal Counsel: What regulations or legal issues should I consider?
 
 For each perspective, give me 3-4 key points to consider.</pre>
+        </div>
 
-            <h3 style="margin-top: 1.5rem; color: var(--secondary);">Devil's Advocate</h3>
-            <pre style="background: #f7fafc; padding: 1rem; border-radius: 6px; overflow-x: auto; font-size: 0.9rem; border: 1px solid var(--border);">I believe that [YOUR IDEA/POSITION].
+        <div class="prompt-block">
+            <h3>Devil's Advocate</h3>
+            <pre>I believe that [YOUR IDEA/POSITION].
 
-Play devil's advocate. Give me the strongest possible arguments against this idea. 
+Play devil's advocate. Give me the strongest possible arguments against this idea.
 Be harsh but fair. I want to know:
 
 1. Why might this fail?
@@ -343,41 +542,66 @@ Be harsh but fair. I want to know:
 4. What market conditions could kill this?
 
 Don't hold back - I need to hear the hard truths.</pre>
+        </div>
 
-            <h3 style="margin-top: 1.5rem; color: var(--secondary);">Reverse Prompting</h3>
-            <pre style="background: #f7fafc; padding: 1rem; border-radius: 6px; overflow-x: auto; font-size: 0.9rem; border: 1px solid var(--border);">I want to [YOUR GOAL - e.g., create a marketing plan, write a business proposal].
+        <div class="prompt-block">
+            <h3>Reverse Prompting</h3>
+            <pre>I want to [YOUR GOAL - e.g., create a marketing plan, write a business proposal].
 
-Before giving me any advice, interview me first. Ask me questions one at a time 
+Before giving me any advice, interview me first. Ask me questions one at a time
 to understand my specific situation, constraints, and goals.
 
 After you understand my situation, then give me tailored recommendations.
 
 Start with your first question.</pre>
         </div>
+    </section>
 
-        <div class="section">
-            <h2>Recommended AI Tools</h2>
-            <p style="margin-bottom: 1rem; color: var(--text-light);">You don't need a paid subscription. These free tools handle everything we covered today.</p>
-            <div class="guides-grid">
-                <div class="guide-card">
-                    <h4>Google Gemini <span class="badge">Recommended</span></h4>
-                    <p>Free, powerful, and integrated with Google Workspace. Use for brainstorming, analysis, and drafting. Access at <a href="https://gemini.google.com" target="_blank">gemini.google.com</a></p>
-                </div>
-                <div class="guide-card">
-                    <h4>NotebookLM <span class="badge">Recommended</span></h4>
-                    <p>Free AI grounded in your own sources. Upload readings and get answers with no hallucination. Access at <a href="https://notebooklm.google.com" target="_blank">notebooklm.google.com</a></p>
-                </div>
-                <div class="guide-card">
-                    <h4>Other Tools</h4>
-                    <p>ChatGPT, Claude, and Copilot also work well. The techniques from today transfer to any AI tool. Use what you have access to.</p>
-                </div>
+    <section id="tools" class="section">
+        <div class="section-header">
+            <div class="label">Get Started</div>
+            <h2>Interactive Tools</h2>
+        </div>
+
+        <div class="tools-highlight">
+            <div class="tool-card">
+                <h4>Style Mirror</h4>
+                <p>Upload a sample of your writing and get a reusable style prompt that makes AI write like you.</p>
+                <a href="https://stylemirror.eduserver.au/">Open Style Mirror &rarr;</a>
+            </div>
+            <div class="tool-card">
+                <h4>NotebookLM <span class="card-badge">Free</span></h4>
+                <p>Upload your readings, lecture notes, or papers and have AI conversations grounded only in your sources. No hallucination.</p>
+                <a href="https://notebooklm.google.com">Open NotebookLM &rarr;</a>
             </div>
         </div>
-    </div>
+
+        <div class="section-header" style="margin-top: 2rem;">
+            <div class="label">No subscription needed</div>
+            <h2>Recommended AI Tools</h2>
+            <p>Free tools that handle everything from today's session.</p>
+        </div>
+
+        <div class="tools-grid">
+            <div class="card">
+                <h3>Google Gemini <span class="card-badge">Recommended</span></h3>
+                <p>Free, powerful, and integrated with Google Workspace. Use for brainstorming, analysis, and drafting.</p>
+            </div>
+            <div class="card">
+                <h3>NotebookLM <span class="card-badge">Recommended</span></h3>
+                <p>Free AI grounded in your own sources. Upload readings and get answers with no hallucination.</p>
+            </div>
+            <div class="card">
+                <h3>Other Tools</h3>
+                <p>ChatGPT, Claude, and Copilot also work well. The techniques from today transfer to any AI tool.</p>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <p>Conversation, Not Delegation - MGMT1003 Guest Lecture</p>
-        <p>Dr. Michael Borck | Curtin Singapore | Updated March 2026</p>
+        <p>Conversation, Not Delegation &middot; MGMT1003 Guest Lecture</p>
+        <p>Dr. Michael Borck &middot; Curtin Singapore &middot; March 2026</p>
     </footer>
+
 </body>
 </html>
