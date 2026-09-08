@@ -175,38 +175,40 @@ Point out: giving AI permission to be critical produces better feedback. Validat
 
 ### Voice Test — Pass 1, generic (3 min)
 
-Paste into a fresh Gemini chat:
+Paste into the same Gemini chat as the Devil's Advocate demo (the cashless coffee shop thread stays alive):
 
 ```
-Write a 60-word social media promo for our Business
-Students' Association's end-of-semester Night Market.
+Write a 60-word social media promo for a cashless
+coffee shop near a university campus.
 ```
 
-**Point at the output:** slick, forgettable — "unforgettable evening of food, fun and festivities." Could be any event, anywhere. This is the average — and the average is free.
+**Point at the output:** slick, forgettable — "elevate your coffee experience", "your ultimate study destination." Could be any café, anywhere. This is the average — and the average is free.
 
 ### Voice Test — Pass 2, with voice (4 min)
 
-Paste into the same chat:
+Paste into the same chat. Identical ask — the ONLY difference is 100 words of your own writing, about something completely unrelated to coffee:
 
 ```
-Here is ~100 words of my own writing: "Okay, real talk.
-Every end-of-sem event is the same. Someone books the tavern,
-there's a DJ nobody asked for, and everyone stands around in
-their tutorial groups too nervous to actually meet anyone.
-We're doing the opposite. Night market. Twenty stalls run by
-students — yes, the quiet guy from your stats tute is now a
-small-business owner selling dumplings. Bring five bucks, eat
-your way across the quad. If you see me near the milk tea
-stall, no you didn't."
+Here is ~100 words of my own writing:
 
-Rewrite the 60-word promo in my voice. Lead with the one
-thing only our club would say: real stalls run by students,
-not another tavern night.
+"Real talk — I've started about six group assignments this
+year and every one begins the same way. Five names on a doc,
+a group chat that's electric for about four hours, then
+silence for two weeks. Then the panic message: 'hey guys,
+so what are we actually doing?' I've stopped being precious
+about it. First 20 minutes, someone writes a rough plan,
+everyone claims a bit, nobody's bit is precious. Finished
+beats perfect. Every assignment where we aimed for perfect
+ended in an extension application. The ones where we aimed
+for finished? Submitted early, went to the pub."
+
+Now write the same 60-word promo for the cashless coffee
+shop — but in my voice.
 ```
 
 **Land the point:**
 
-> "Same model, same event — now it sounds like a person. The AI did not get smarter. You gave it your edge: context and voice. **The difference IS the edge.**"
+> "Same model, same ask — the only difference is 100 words of me. Watch the rhythm change: short sentences, dry asides. And let's be honest — it's still a bit AI-ish, a bit janky. But it sounds like a *person*, not a brand. And notice what it did NOT do: it didn't steal my ideas — group assignments have nothing to do with coffee. It borrowed my voice. Voice is yours to supply; only you have it. **The difference IS the edge.**"
 
 ### For their assignments (2 min)
 

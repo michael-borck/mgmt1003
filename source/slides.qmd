@@ -267,34 +267,36 @@ The question that decides your grades — and your careers. AI can write a compe
 ## Demo: The Voice Test — Pass 1 (Generic)
 
 ```
-Write a 60-word social media promo for our Business
-Students' Association's end-of-semester Night Market.
+Write a 60-word social media promo for a cashless
+coffee shop near a university campus.
 ```
 
 ::: {.notes}
-Switch to browser and run this in Gemini. Watch it produce slick, forgettable marketing-speak — "unforgettable evening of food, fun and festivities". Could be any event, anywhere. This is the average — and the average is free.
+Switch to browser and run this in Gemini — the same chat as the Devil's Advocate demo, so the thread stays alive. Watch it produce slick, forgettable marketing-speak: "elevate your coffee experience", "your ultimate study destination". Could be any café, anywhere. This is the average — and the average is free.
 :::
 
 ## Demo: The Voice Test — Pass 2 (Your Voice)
 
 ```
-Here is ~100 words of my own writing: "Okay, real talk.
-Every end-of-sem event is the same. Someone books the tavern,
-there's a DJ nobody asked for, and everyone stands around in
-their tutorial groups too nervous to actually meet anyone.
-We're doing the opposite. Night market. Twenty stalls run by
-students — yes, the quiet guy from your stats tute is now a
-small-business owner selling dumplings. Bring five bucks, eat
-your way across the quad. If you see me near the milk tea
-stall, no you didn't."
+Here is ~100 words of my own writing:
 
-Rewrite the 60-word promo in my voice. Lead with the one
-thing only our club would say: real stalls run by students,
-not another tavern night.
+"Real talk — I've started about six group assignments this
+year and every one begins the same way. Five names on a doc,
+a group chat that's electric for about four hours, then
+silence for two weeks. Then the panic message: 'hey guys,
+so what are we actually doing?' I've stopped being precious
+about it. First 20 minutes, someone writes a rough plan,
+everyone claims a bit, nobody's bit is precious. Finished
+beats perfect. Every assignment where we aimed for perfect
+ended in an extension application. The ones where we aimed
+for finished? Submitted early, went to the pub."
+
+Now write the same 60-word promo for the cashless coffee
+shop — but in my voice.
 ```
 
 ::: {.notes}
-Run this in the same chat. Same model, same event — now it sounds like a person: the "tutorial groups too nervous to mingle" insight, the dumpling guy. The AI did not get smarter. You gave it your edge — context and voice. The difference IS the edge. For assignments: if your marker could swap your essay with any other AI draft, what did you submit? Paste 100 words of your own writing and have AI critique it, not write it. Style Mirror (companion site) makes this permanent.
+Run this in the same chat. Same model, same ask — the ONLY difference is 100 words of me, about something completely unrelated to coffee. Watch it pick up the rhythm: short sentences, the dry asides, "finished beats perfect" energy. Be honest with the room: it's still a bit AI-ish, a bit janky — but it sounds like a person, not a brand. And notice what it did NOT do: it didn't steal my ideas — group assignments have nothing to do with coffee. It borrowed my voice. Voice is yours to supply; only you have it. For assignments: your marker reads 200 AI-average essays that all sound identical. Yours shouldn't.
 :::
 
 ## Reverse Prompting — When You Don't Know What to Ask
