@@ -276,7 +276,7 @@ Then show the grid (chart image):
 ### Share Resources
 
 - Companion website URL + QR (all prompts, handout, Style Mirror, free tools guide, AI readiness quiz)
-- Free tools: NotebookLM (source-grounded, no hallucination), Gemini, ChatGPT, Claude
+- Free tools: Gemini Notebook (source-grounded, no hallucination), Gemini, ChatGPT, Claude
 
 ### Closing
 

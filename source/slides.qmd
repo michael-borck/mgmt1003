@@ -414,7 +414,7 @@ Bottom-left: average and small stakes — lean in, let AI run. Top-right: precis
 
 | Tool | Free Limit | Best For |
 |---|---|---|
-| **NotebookLM** | Generous | Source-grounded research, no hallucination |
+| **Gemini Notebook** | Generous | Source-grounded research, no hallucination |
 | **ChatGPT** | ~10 msgs / 5 hrs | General brainstorming and analysis |
 | **Claude** | ~15 msgs / 5 hrs | Detailed writing and reasoning |
 | **Gemini** | ~5 prompts / day | Google Workspace integration |
@@ -422,7 +422,7 @@ Bottom-left: average and small stakes — lean in, let AI run. Top-right: precis
 | **Meta AI** | Free, no sign-up | Quick questions, Llama 4 models |
 
 ::: {.notes}
-You don't need a paid subscription. Spread your prompts across multiple free tools. NotebookLM is your workhorse — upload sources, no hallucination, generous limits. Free limits change frequently — check the handout for latest details.
+You don't need a paid subscription. Spread your prompts across multiple free tools. Gemini Notebook is your workhorse — upload sources, no hallucination, generous limits. Free limits change frequently — check the handout for latest details.
 :::
 
 ## {background-color="black"}
