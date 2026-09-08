@@ -14,6 +14,8 @@ format:
     height: 720
     margin: 0.1
     center: true
+    template-partials:
+      - title-slide.html
 ---
 
 ## {background-color="black"}
@@ -32,16 +34,22 @@ Pause for 2-3 seconds before speaking.
 "$440,000. That's what the Australian government paid Deloitte for a welfare review report earlier this year. Reports contained fabricated citations. Canada had a similar incident — $1.6 million healthcare report with incorrect citations. Their reputation — built over decades — damaged by AI-generated misinformation they didn't verify. Today, I'm going to teach you how to use AI as a strategic thinking partner — and how to avoid becoming the next headline."
 :::
 
-## Quick Poll: Where Are You With AI? {.center}
+## Follow Along: The Companion Site {.center}
 
 <br>
 
-![](images/ai-poll-qr.png){width=400 fig-align="center"}
+![](images/website.png){width=380 fig-align="center"}
 
-[forms.cloud.microsoft/r/4BmAZXG3N5](https://forms.cloud.microsoft/r/4BmAZXG3N5)
+`michael-borck.github.io/mgmt1003`
+
+<br>
+
+> **Everything from today lives here** — every prompt, the handout, the Trust Tool game.
+
+Scan now — you'll use it after each demo.
 
 ::: {.notes}
-Give students 1-2 minutes to scan and respond. Share results live if the form supports it.
+Give the room 30-45 seconds to scan. This is the handout — nobody needs to copy code off slides; every prompt we run today is at the top of that site, ready to paste. The QR is also on the title slide if they missed it, and we'll come back to it at the end.
 :::
 
 ## Today's Session
@@ -53,12 +61,10 @@ Give students 1-2 minutes to scan and respond. Share results live if the form su
 5. **The Human Edge** — Your voice, live demo
 6. **VET Framework** — Verify everything
 
-**Companion Website:** [Link in chat] — or scan now:
-
-![](images/website.png){width=140 fig-align="center"}
+**Companion Website:** link in chat — QR on the next slide.
 
 ::: {.notes}
-The core theme today has two halves: think WITH AI, not THROUGH AI — and the conversation IS the thinking. But the destination is the human edge: when everyone has AI, the differentiator is what only you bring. Reverse Prompting and more prompts are on the companion site. Give the room 30 seconds to scan the QR — every prompt from today is on the top of that site, so nobody needs to copy code off slides.
+The core theme today has two halves: think WITH AI, not THROUGH AI — and the conversation IS the thinking. But the destination is the human edge: when everyone has AI, the differentiator is what only you bring. Reverse Prompting and more prompts are on the companion site.
 :::
 
 ## The Real Problem {.center}

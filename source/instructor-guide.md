@@ -14,7 +14,7 @@
 ## Pre-Session Checklist
 
 - [ ] Browser open with Gemini (gemini.google.com), blank chat
-- [ ] Companion website loaded — **QR is on the agenda slide**, point at it in the first 5 minutes (students were not emailed it ahead of time)
+- [ ] Companion website loaded — **QR is on the title slide and the follow-along slide**, point at it in the first 5 minutes (students were not emailed it ahead of time)
 - [ ] Slides ready (share screen or projector)
 - [ ] This guide open for reference
 - [ ] Test screen/projector before session
@@ -26,7 +26,7 @@
 
 | Time | Section | Duration |
 |------|---------|----------|
-| 0:00 | Opening Hook (Deloitte Case) + Poll | 5 min |
+| 0:00 | Opening Hook (Deloitte Case) + Follow-Along QR | 5 min |
 | 0:05 | Part 1: The AI Mindset | 8 min |
 | 0:13 | RTCF Framework | 4 min |
 | 0:17 | Part 2: Board of Directors (live demo) | 8 min |
@@ -40,7 +40,7 @@
 
 ---
 
-## Opening Hook: The Deloitte Case + Poll (5 minutes)
+## Opening Hook: The Deloitte Case + Follow-Along (5 minutes)
 
 ### Slide: "$440,000"
 
@@ -52,9 +52,13 @@
 >
 > Today I'm going to teach you how to use AI as a strategic thinking partner — and how to avoid becoming the next headline."
 
-### Slide: Quick Poll
+### Slide: Follow Along — The Companion Site
 
-Give students 1–2 minutes to scan the QR and respond. Share results live if the form supports it.
+The companion-site QR is on the title slide and this slide. Give the room 30–45 seconds to scan.
+
+**Script:**
+
+> "This is the handout — nobody needs to copy code off slides. Every prompt we run today is at the top of that site, ready to paste. Scan now; you'll use it after each demo."
 
 **Transition:** "Let's look at what AI actually is — and the mindset that separates the Deloittes from the people who get real value."
 
