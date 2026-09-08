@@ -2,7 +2,7 @@
 title: "Conversation, Not Delegation"
 subtitle: "Using AI for Business Strategy"
 author: "Dr. Michael Borck"
-date: "March 2026"
+date: "September 2026"
 format:
   revealjs:
     theme: dark
@@ -48,15 +48,17 @@ Give students 1-2 minutes to scan and respond. Share results live if the form su
 
 1. **The AI Mindset** — Conversation, not delegation
 2. **RTCF Framework** — Structure better prompts
-3. **Board of Directors** — Multi-perspective analysis
-4. **Devil's Advocate** — Stress-testing ideas
-5. **Reverse Prompting** — Let AI interview you
+3. **Board of Directors** — Live demo
+4. **Devil's Advocate** — Live demo
+5. **The Human Edge** — Your voice, live demo
 6. **VET Framework** — Verify everything
 
-**Companion Website:** [Link in chat]
+**Companion Website:** [Link in chat] — or scan now:
+
+![](images/website.png){width=140 fig-align="center"}
 
 ::: {.notes}
-The core theme today: think WITH AI, not THROUGH AI. AI is a conversation partner, not a vending machine.
+The core theme today has two halves: think WITH AI, not THROUGH AI — and the conversation IS the thinking. But the destination is the human edge: when everyone has AI, the differentiator is what only you bring. Reverse Prompting and more prompts are on the companion site. Give the room 30 seconds to scan the QR — every prompt from today is on the top of that site, so nobody needs to copy code off slides.
 :::
 
 ## The Real Problem {.center}
@@ -95,10 +97,12 @@ Most people treat AI like a vending machine — put in a prompt, get an answer. 
 
 <br>
 
+**Conversation IS thinking.** The draft is just the record of it.
+
 Your job is **Editor-in-Chief**, not stenographer.
 
 ::: {.notes}
-This is the single most important idea from today. If you remember nothing else, remember this.
+This is the single most important idea from today, and it has two halves. First: think WITH AI, not THROUGH AI. Second — the deeper point — the conversation itself is where the thinking happens. Delegate the thinking and you get an answer you never earned and can't defend. Converse, and the thinking sticks. The document you hand in is just the record of the conversation.
 :::
 
 ## AI is a Smart Intern
@@ -172,7 +176,7 @@ RTCF gives you a simple structure for any prompt. You don't need all four every 
 ![](images/ai-mindset.png){fig-align="center"}
 
 ::: {.notes}
-Transition to the first technique. We've covered the mindset — now let's put it into practice with three powerful techniques.
+Transition to the first technique. We've covered the mindset — now let's put it into practice. Two live techniques, then the voice test.
 :::
 
 ## Board of Directors Strategy
@@ -238,38 +242,65 @@ Don't hold back - I need to hear the hard truths.
 Switch to browser and run this demo. Point out how giving AI permission to be critical produces better feedback.
 :::
 
+## The Human Edge {.center}
+
+<br>
+
+> AI can write a book. It **cannot write the next bestseller**.
+
+::: {.incremental}
+- Bestsellers aren't just well-written — they carry a **person**: lived experience, taste, timing, voice
+- If AI can produce it, **everyone can produce it** — the average is now free
+- So: what makes **your** submission different?
+:::
+
+::: {.notes}
+The question that decides your grades — and your careers. AI can write a competent novel: plot, prose, structure. It cannot write the next bestseller, because a bestseller is a human artifact — lived experience, taste, an author's voice, cultural timing. Nobody can prompt their way to it. Same for your work. AI can produce the essay, the report, the pitch. So can every other student in this room. Your marker reads 200 papers — the ones that stand out are the ones with YOU in them: your example, your data, your reasoning, your voice. Using AI is fine. Submitting the average is what costs you.
+:::
+
+## Demo: The Voice Test — Pass 1 (Generic)
+
+```
+Write a 60-word social media promo for our Business
+Students' Association's end-of-semester Night Market.
+```
+
+::: {.notes}
+Switch to browser and run this in Gemini. Watch it produce slick, forgettable marketing-speak — "unforgettable evening of food, fun and festivities". Could be any event, anywhere. This is the average — and the average is free.
+:::
+
+## Demo: The Voice Test — Pass 2 (Your Voice)
+
+```
+Here is ~100 words of my own writing: "Okay, real talk.
+Every end-of-sem event is the same. Someone books the tavern,
+there's a DJ nobody asked for, and everyone stands around in
+their tutorial groups too nervous to actually meet anyone.
+We're doing the opposite. Night market. Twenty stalls run by
+students — yes, the quiet guy from your stats tute is now a
+small-business owner selling dumplings. Bring five bucks, eat
+your way across the quad. If you see me near the milk tea
+stall, no you didn't."
+
+Rewrite the 60-word promo in my voice. Lead with the one
+thing only our club would say: real stalls run by students,
+not another tavern night.
+```
+
+::: {.notes}
+Run this in the same chat. Same model, same event — now it sounds like a person: the "tutorial groups too nervous to mingle" insight, the dumpling guy. The AI did not get smarter. You gave it your edge — context and voice. The difference IS the edge. For assignments: if your marker could swap your essay with any other AI draft, what did you submit? Paste 100 words of your own writing and have AI critique it, not write it. Style Mirror (companion site) makes this permanent.
+:::
+
 ## Reverse Prompting — When You Don't Know What to Ask
 
-![](images/reverse-prompting.png){fig-align="center" height=400}
+![](images/reverse-prompting.png){fig-align="center" height=350}
 
 Let AI **interview you** first — recommendations become tailored, not generic.
 
-::: {.notes}
-The problem: sometimes the hardest part is knowing what questions to ask. The solution: let AI interview YOU first. AI understands your specific context, recommendations become tailored, you discover what you don't know.
-:::
-
-## Demo: Reverse Prompting
-
-```
-I want to create a marketing plan for a new
-cashless coffee shop near a university.
-
-Before giving me any advice, interview me first.
-Ask me questions one at a time to understand:
-- My target customers
-- My budget and timeline
-- My competitive advantages
-- My experience in this industry
-- Any constraints I'm working with
-
-After you understand my situation, then give
-me tailored marketing recommendations.
-
-Start with your first question.
-```
+**Full prompt on the companion site.**
 
 ::: {.notes}
-Run this demo. Answer 2-3 questions from the AI to show how the conversation builds context.
+Quick one — no live demo. Sometimes the hardest part is knowing what questions to ask. Flip it: tell AI to interview YOU, one question at a time, before giving advice. Great for assignment planning, job interviews, business plans. Full prompt is on the companion site — try it tonight on your next assignment. Notice this is "conversation is thinking" in action: the interview itself clarifies what you actually want.
 :::
 
 ## The Billboard Rule
@@ -333,6 +364,41 @@ If you can't verify it, **don't use it**.
 VET replaces the old "three verification questions" with a memorable framework. Verify: find the source independently. Explain: ask AI to show its reasoning. Test: cross-check with other tools and your own logic. If you can't verify it, don't use it.
 :::
 
+## The Trust Tool — Where Does a Human Stay in the Loop? {.center}
+
+Two questions before you act on any AI output:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### 1. Precision
+
+Does this need to be **precise** — or is **average** fine?
+
+*A brainstorm can be average. A number someone acts on must be precise.*
+:::
+
+::: {.column width="50%"}
+### 2. Blast radius
+
+If it's wrong, is the damage **small** or **large**?
+
+*A typo in a draft is small. A wrong recommendation that spreads is large.*
+:::
+
+::::
+
+|                       | **Small stakes**                  | **Large stakes**                        |
+|-----------------------|-----------------------------------|-----------------------------------------|
+| **Average is fine**   | Lean in                           | Verify the load-bearing bits            |
+| **Must be precise**   | Verify before you ship            | **A human owns it. AI is a first draft.** |
+
+**Practice:** the Trust Tool game — on the companion site.
+
+::: {.notes}
+Deloitte, in one line: a red-quadrant output treated as green. The model didn't fail uniquely — the placement failed. Almost every public AI failure is someone treating a must-be-precise, high-stakes output as if it were an average, low-stakes one. The trust tool makes placement a conscious act: average or precise, small or large? Green corner: lean in, let AI run. Red corner: a human owns the decision. For assignments: your references and figures are red-quadrant — verify those before anything else. The interactive game on the companion site serves up scenarios to place on the grid.
+:::
+
 ## Free AI Tools You Can Use Today
 
 | Tool | Free Limit | Best For |
@@ -353,16 +419,16 @@ You don't need a paid subscription. Spread your prompts across multiple free too
 ![](images/key-takeaways.png){fig-align="center" height=300}
 
 ::: {.incremental}
-1. AI is a **conversation partner**, not a replacement for thinking
+1. AI is a **conversation partner** — the conversation *is* the thinking
 2. Use **RTCF** to structure better prompts
-3. Get **multiple perspectives** (Board of Directors)
-4. **Challenge your ideas** (Devil's Advocate)
-5. Let AI **interview you** for better context (Reverse Prompting)
-6. **VET everything** — verify, explain, test
+3. Get **multiple perspectives** (Board) and **invite criticism** (Devil's Advocate)
+4. Your **voice and judgement** are the edge — don't submit the average
+5. **VET everything** — verify, explain, test
+6. **Place every task on the trust tool** — average/precise × small/large
 :::
 
 ::: {.notes}
-Recap the key messages. Emphasise conversation over delegation. These techniques work with any AI tool.
+Recap the key messages. Emphasise: conversation over delegation — and the conversation is the thinking. When everyone has AI, the human edge — your context, your voice, your judgement — is the differentiator. VET your claims, and place your tasks on the trust tool so you know how much checking each one deserves. These techniques work with any AI tool.
 :::
 
 ## Questions?
@@ -371,5 +437,5 @@ Recap the key messages. Emphasise conversation over delegation. These techniques
 ![](images/website.png){fig-align="center" height=150}
 
 ::: {.notes}
-Resources available: all prompts from today's session, free AI tools handout, Style Mirror tool, deeper reading on AI concepts, ethics guidelines. Thank you for your attention.
+Resources available: all prompts from today's session, free AI tools handout, Style Mirror tool, the Trust Tool game, deeper reading on AI concepts, ethics guidelines. Thank you for your attention.
 :::

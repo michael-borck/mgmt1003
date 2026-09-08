@@ -318,7 +318,12 @@
 
     <div class="framework-box">
         <h4>The Core Principle</h4>
-        <p><strong>Conversation, Not Delegation.</strong> Think <em>with</em> AI, not <em>through</em> AI. Delegation creates dependency. Conversation builds capability. Your thinking is the secret ingredient.</p>
+        <p><strong>Conversation, Not Delegation.</strong> Think <em>with</em> AI, not <em>through</em> AI. Delegation creates dependency. Conversation builds capability. <strong>The conversation IS the thinking</strong> &mdash; the draft is just the record of it.</p>
+    </div>
+
+    <div class="framework-box">
+        <h4>The Human Edge</h4>
+        <p><strong>AI can write a book. It cannot write the next bestseller.</strong> A bestseller carries a person: lived experience, taste, timing, voice. If AI can produce it, everyone can produce it &mdash; the average is now free. So ask of every submission: <em>what makes this mine?</em> Your example, your data, your reasoning, your voice.</p>
     </div>
 
     <div class="framework-box">
@@ -405,7 +410,42 @@ Don't hold back - I need to hear the hard truths.</pre>
     </div>
 
     <div class="section">
-        <h2 data-num="3">Reverse Prompting</h2>
+        <h2 data-num="3">The Voice Test</h2>
+        <p class="section-intro">Prove the human edge to yourself. Run Pass 1, then Pass 2 in the same chat, and compare. The AI doesn't get smarter &mdash; you gave it your voice.</p>
+
+        <div class="prompt-box">
+            <h3>Pass 1 &mdash; Generic</h3>
+            <button class="copy-btn no-print" onclick="copyPrompt(this)">Copy</button>
+            <pre>Write a 60-word social media promo for our Business
+Students' Association's end-of-semester Night Market.</pre>
+        </div>
+
+        <div class="prompt-box">
+            <h3>Pass 2 &mdash; Your Voice</h3>
+            <button class="copy-btn no-print" onclick="copyPrompt(this)">Copy</button>
+            <pre>Here is ~100 words of my own writing:
+"[PASTE ~100 WORDS OF SOMETHING YOU ACTUALLY WROTE -
+an email, a group chat message, a blog post, a caption]"
+
+Now rewrite [YOUR TASK - e.g., the 60-word promo for
+the Night Market] in my voice. Lead with the one thing
+only I would say - my specific context and my point
+of difference.</pre>
+        </div>
+
+        <div class="tip-box">
+            <h4>For Your Assignments</h4>
+            <ul>
+                <li>Paste in your own example from lived experience</li>
+                <li>Bring your own data &mdash; something only you collected</li>
+                <li>Paste 100 words of your own writing and have AI <em>critique it, not write it</em></li>
+                <li>Make it permanent: Style Mirror generates a reusable style prompt</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 data-num="4">Reverse Prompting</h2>
         <p class="section-intro">Let AI interview YOU before giving advice. This produces much more tailored recommendations.</p>
 
         <div class="prompt-box">
@@ -438,7 +478,7 @@ Start with your first question.</pre>
     </div>
 
     <div class="section">
-        <h2 data-num="4">Bonus: Assignment Helper</h2>
+        <h2 data-num="5">Bonus: Assignment Helper</h2>
         <p class="section-intro">Use AI to improve your own work without having it write for you.</p>
 
         <div class="prompt-box">
@@ -473,7 +513,7 @@ Here's my draft:
     </div>
 
     <div class="section">
-        <h2 data-num="5">VET Your AI</h2>
+        <h2 data-num="6">VET Your AI</h2>
         <p class="section-intro">Before using any AI output, run it through the VET framework. VET your AI like you'd vet a source.</p>
 
         <div class="vet-grid">
@@ -504,7 +544,56 @@ Here's my draft:
     </div>
 
     <div class="section">
-        <h2 data-num="6">Recommended Tools</h2>
+        <h2 data-num="7">The Trust Tool</h2>
+        <p class="section-intro">VET tells you how to check a claim. The trust tool tells you how much checking each task deserves &mdash; two questions before you act on any AI output.</p>
+
+        <div class="framework-box">
+            <h4>The Two Questions</h4>
+            <p><strong>1. Precision</strong> &mdash; does this need to be <em>precise</em>, or is <em>average</em> fine? A brainstorm can be average; a number someone acts on must be precise.<br>
+            <strong>2. Blast radius</strong> &mdash; if it's wrong, is the damage <em>small</em> or <em>large</em>? A typo in a draft is small; a wrong recommendation that spreads is large.</p>
+        </div>
+
+        <style>
+            .trust-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-top: 0.5rem; }
+            .trust-item { padding: 0.85rem; border-radius: 6px; border: 1px solid var(--border); background: var(--white); }
+            .trust-item .zone { font-weight: 700; font-size: 0.85rem; letter-spacing: 0.03em; }
+            .trust-item .action { font-weight: 600; margin: 0.15rem 0 0.2rem; color: var(--text); }
+            .trust-item p { font-size: 0.85rem; color: var(--text-light); margin: 0; }
+            .trust-green { border-left: 4px solid #38a169; }
+            .trust-yellow { border-left: 4px solid #f59e0b; }
+            .trust-red { border-left: 4px solid #e53e3e; }
+        </style>
+        <div class="trust-grid">
+            <div class="trust-item trust-green">
+                <div class="zone" style="color:#276749">AVERAGE &times; SMALL</div>
+                <div class="action">Lean in.</div>
+                <p>Let AI run. Skim and use.</p>
+            </div>
+            <div class="trust-item trust-yellow">
+                <div class="zone" style="color:#975a16">AVERAGE &times; LARGE</div>
+                <div class="action">Verify the load-bearing bits.</div>
+                <p>Find the claim everything rests on &mdash; check that.</p>
+            </div>
+            <div class="trust-item trust-yellow">
+                <div class="zone" style="color:#975a16">PRECISE &times; SMALL</div>
+                <div class="action">Verify before you ship.</div>
+                <p>Confirm the specifics.</p>
+            </div>
+            <div class="trust-item trust-red">
+                <div class="zone" style="color:#9b2c2c">PRECISE &times; LARGE</div>
+                <div class="action">A human owns it.</div>
+                <p>AI is a first draft only. A person signs off. Your references and figures live here.</p>
+            </div>
+        </div>
+
+        <div class="tip-box">
+            <h4>Practise</h4>
+            <p>The <a href="https://michael-borck.github.io/trust-tool/">Trust Tool game</a> serves up scenarios to place on the grid and tells you where they belong. Remember Deloitte: a red-quadrant output treated as green.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 data-num="8">Recommended Tools</h2>
         <p class="section-intro">Free tools that handle everything from today's session. No paid subscription needed.</p>
 
         <div class="tip-box">
@@ -513,6 +602,7 @@ Here's my draft:
                 <li><strong>Gemini</strong> &mdash; <a href="https://gemini.google.com">gemini.google.com</a> &mdash; General-purpose AI for brainstorming, analysis, and drafting</li>
                 <li><strong>NotebookLM</strong> &mdash; <a href="https://notebooklm.google.com">notebooklm.google.com</a> &mdash; AI grounded in your own sources (readings, notes, papers)</li>
                 <li><strong>Style Mirror</strong> &mdash; <a href="https://stylemirror.eduserver.au/">stylemirror.eduserver.au</a> &mdash; Help AI write in your voice</li>
+                <li><strong>Trust Tool game</strong> &mdash; <a href="https://michael-borck.github.io/trust-tool/">michael-borck.github.io/trust-tool</a> &mdash; Practise placing tasks on the trust grid</li>
             </ul>
         </div>
     </div>

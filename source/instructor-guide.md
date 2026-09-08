@@ -1,23 +1,24 @@
-# AI Boardroom: Instructor Guide
+# Conversation, Not Delegation: Instructor Guide
 
 ## Session Overview
 
-**Title:** AI Boardroom: Leveraging AI for Business Strategy  
+**Title:** Conversation, Not Delegation — Using AI for Business Strategy  
 **Duration:** 60 minutes  
-**Format:** Online interactive session with live demos  
+**Format:** Interactive session with live demos  
 **Audience:** MGMT1003 Introduction to Business students  
-**Date:** Tuesday, 9 December 2025, 9:00am - 10:00am  
-**Location:** Online (Learning Space 301/302, Curtin Singapore Campus)
+**Date:** Tuesday, 9 September 2026  
+**Location:** Curtin Singapore
 
 ---
 
 ## Pre-Session Checklist
 
-- [ ] Browser open with Gemini (gemini.google.com)
-- [ ] Companion website loaded (share link in chat at start)
-- [ ] Slides ready (share screen)
+- [ ] Browser open with Gemini (gemini.google.com), blank chat
+- [ ] Companion website loaded — **QR is on the agenda slide**, point at it in the first 5 minutes (students were not emailed it ahead of time)
+- [ ] Slides ready (share screen or projector)
 - [ ] This guide open for reference
-- [ ] Test screen sharing before session
+- [ ] Test screen/projector before session
+- [ ] Have screenshots of expected Voice Test outputs as backup
 
 ---
 
@@ -25,361 +26,284 @@
 
 | Time | Section | Duration |
 |------|---------|----------|
-| 0:00 | Opening Hook (Deloitte Case) | 3 min |
-| 0:03 | Part 1: The AI Mindset | 10 min |
-| 0:13 | Part 2: Board of Directors Strategy | 15 min |
-| 0:28 | Part 3: Devil's Advocate Technique | 10 min |
-| 0:38 | Part 4: Reverse Prompting | 10 min |
-| 0:48 | Part 5: Ethics & The Trap | 10 min |
-| 0:58 | Wrap-up & Resources | 2 min |
+| 0:00 | Opening Hook (Deloitte Case) + Poll | 5 min |
+| 0:05 | Part 1: The AI Mindset | 8 min |
+| 0:13 | RTCF Framework | 4 min |
+| 0:17 | Part 2: Board of Directors (live demo) | 8 min |
+| 0:25 | Part 3: Devil's Advocate (live demo) | 8 min |
+| 0:33 | Part 4: The Human Edge + Voice Test (live demo) | 11 min |
+| 0:44 | Part 5: Reverse Prompting (concept only) | 3 min |
+| 0:47 | Part 6: Billboard, Hallucinations, VET, Trust Tool | 8 min |
+| 0:55 | Wrap-up, Tools & Resources | 5 min |
+
+**The arc:** validate (Board) → pressure-test (Devil's Advocate) → make it *yours* (Voice Test) → verify (VET). Name this arc when you reach the Voice Test.
 
 ---
 
-## Opening Hook: The Deloitte Case (3 minutes)
+## Opening Hook: The Deloitte Case + Poll (5 minutes)
 
-### Slide 1: Title Slide
-*Display while being introduced*
-
-### Slide 2: "$440,000"
+### Slide: "$440,000"
 
 **Script:**
 
-> "$440,000."
->
-> *[Pause 2 seconds]*
->
-> "That's what the Australian government paid Deloitte for a welfare review report earlier this year. And $1.6 million for a Canadian healthcare report."
+> "$440,000. *[Pause]* That's what the Australian government paid Deloitte for a welfare review report earlier this year. It contained fabricated citations — fake studies, made-up quotes. Reputation built over decades, damaged in days.
 >
 > *[Pause]*
 >
-> "Both reports contained fabricated citations. Fake studies. Made-up quotes. The AI Deloitte used to draft these reports hallucinated - it invented sources that didn't exist. And Deloitte's consultants never caught it."
->
-> *[Pause]*
->
-> "Deloitte had to issue partial refunds. They're now facing industry-wide calls for stricter oversight. Their reputation - built over decades - damaged by AI-generated misinformation they didn't verify."
->
-> *[Pause]*
->
-> "Today, I'm going to teach you how to use AI as a strategic thinking partner for business decisions - and more importantly, how to make sure you never become the next Deloitte headline."
+> Today I'm going to teach you how to use AI as a strategic thinking partner — and how to avoid becoming the next headline."
 
-### Slide 3: Deloitte Case Summary
-*Brief visual reinforcement of the case*
+### Slide: Quick Poll
 
-**Transition:** "Let's start with understanding what AI actually is - and isn't."
+Give students 1–2 minutes to scan the QR and respond. Share results live if the form supports it.
+
+**Transition:** "Let's look at what AI actually is — and the mindset that separates the Deloittes from the people who get real value."
 
 ---
 
-## Part 1: The AI Mindset (10 minutes)
+## Part 1: The AI Mindset (8 minutes)
 
-### Slide 4: "Part 1: The AI Mindset"
-*Chapter marker*
+### The Real Problem — Delegation vs Conversation
 
-### Slide 5: "AI is a Smart Intern Who Hallucinates"
+Contrast the two columns on the slide:
 
-**Key Points to Cover:**
+- **Delegation:** "Write me a business plan" → copy-paste → hope it's correct
+- **Conversation:** "Help me think through this" → iterate → verify and own the result
 
-1. **AI is a reasoning engine, not a search engine**
-   - Google finds information that exists
-   - AI generates responses based on patterns
-   - It doesn't "know" things - it predicts likely responses
+> "Most people treat AI like a vending machine — put in a prompt, get an answer. That's delegation. What we want is conversation."
 
-2. **The Intern Analogy**
-   > "Think of AI like a brilliant intern. They're eager, fast, and can do amazing work. But they also might confidently present you with completely made-up statistics because they want to impress you. Your job is to be their editor-in-chief, not their stenographer."
+### Thesis: Conversation IS Thinking
 
-3. **The Golden Rule**
-   > "AI should challenge your thinking, not replace it. The moment you stop questioning AI's output is the moment you become Deloitte."
+> "AI should challenge your thinking, not replace it. And here's the deeper point: **the conversation IS the thinking.** The draft you hand in is just the record of it. Delegate the thinking and you get an answer you never earned and can't defend. Converse, and the thinking sticks."
 
-**Discussion Prompt (optional):**
-> "Quick question for the chat: How many of you have used ChatGPT, Gemini, or Claude before? Drop a 1 for yes, 2 for no."
+### The Smart Intern
 
-**Transition:** "Now let's look at our first technique for using AI strategically."
+- AI is a **reasoning engine**, not a search engine — it predicts likely responses, it doesn't "know" things
+- Brilliant, fast, eager... but will confidently make things up
+- Your job: **Editor-in-Chief**, not stenographer
 
----
+### The Golden Rule
 
-## Part 2: Board of Directors Strategy (15 minutes)
-
-### Slide 6: "Part 2: Board of Directors Strategy"
-*Chapter marker*
-
-### Slide 7: The Prompt
-
-**Concept Explanation (2 minutes):**
-
-> "When you're making a business decision, you want multiple perspectives. In a real company, you'd have a board of directors - each with different expertise and concerns. The CFO cares about money. The Marketing Director cares about customers. Operations cares about feasibility."
->
-> "We can use AI to simulate this boardroom. One prompt, multiple expert perspectives."
-
-**Demo Prompt (Display on slide and in Gemini):**
-
-```
-I'm considering opening a cashless coffee shop near a university campus. 
-Act as my board of directors and analyse this idea from multiple perspectives:
-
-1. As CFO: What are the financial considerations, risks, and potential ROI?
-2. As Marketing Director: How would you position this and reach the target market?
-3. As Operations Manager: What are the practical challenges of going cashless?
-4. As Legal Counsel: What regulations or legal issues should I consider?
-
-For each perspective, give me 3-4 key points to consider.
-```
-
-**Run Demo (5 minutes):**
-- Paste prompt into Gemini
-- Wait for response
-- Highlight key insights from each "director"
-
-**Discussion Points:**
-- Notice how each perspective catches different issues
-- CFO might flag payment processing fees
-- Legal might flag accessibility concerns (not everyone has cards)
-- This is faster than consulting 4 different experts
-
-**Student Activity (5 minutes):**
-
-> "Now it's your turn. Think of a business idea - it could be something you've thought about, or use one of these:
-> - A meal prep delivery service for students
-> - A tutoring app connecting students with recent graduates
-> - A sustainable fashion rental service
->
-> Try the same prompt structure with your idea. Paste the results in the chat if you'd like to share."
-
-**Transition:** "Great responses coming in. Now, what if you want AI to poke holes in your idea?"
+> "The moment you stop questioning AI's output is the moment you become Deloitte."
 
 ---
 
-## Part 3: Devil's Advocate Technique (10 minutes)
+## RTCF Framework (4 minutes)
 
-### Slide 8: "Part 3: Devil's Advocate"
-*Chapter marker*
+| Letter | What | Example |
+|--------|------|---------|
+| **R** — Role | Tell AI *who* to be | "Act as a CFO..." |
+| **T** — Task | Tell AI *what* to do | "Analyse this idea..." |
+| **C** — Context | Give background | "For a university market..." |
+| **F** — Format | Specify output | "Give me 3–4 bullet points..." |
 
-### Slide 9: The Prompt
+> "You don't need all four every time — but the more context you give, the better the response. Context is where YOUR edge enters. No model supplies it."
 
-**Concept Explanation (2 minutes):**
+---
 
-> "Confirmation bias is real. When we have an idea we love, we tend to look for evidence that supports it and ignore evidence against it. This is dangerous in business."
->
-> "The Devil's Advocate technique forces AI to argue against your position. Not because your idea is bad, but because understanding weaknesses makes your idea stronger."
+## Part 2: Board of Directors Strategy (8 minutes)
 
-**Demo Prompt:**
+**Concept (2 min):** One prompt, multiple expert viewpoints — CFO (money), Marketing Director (customers), Operations Manager (feasibility), Legal Counsel (compliance). Catches blind spots you'd miss thinking alone.
+
+**Demo (5 min):** Paste into Gemini:
 
 ```
-I believe that a cashless coffee shop near a university is a great business idea.
+I'm considering opening a cashless coffee shop
+near a university campus.
 
-Play devil's advocate. Give me the strongest possible arguments against this idea. 
+Act as my board of directors and analyse this
+idea from multiple perspectives:
+
+1. As CFO: Financial considerations, risks, ROI?
+2. As Marketing Director: Positioning and reach?
+3. As Operations Manager: Practical challenges?
+4. As Legal Counsel: Regulations to consider?
+
+For each perspective, give me 3-4 key points.
+```
+
+Highlight one insight per "director" — e.g., Legal flags accessibility (not everyone has cards).
+
+**Student activity (2 min):** Students try the structure on their own idea (meal prep delivery, tutoring app, fashion rental — or their own).
+
+**Transition:** "Good — you've got advice. Now let's find out what's *wrong* with your idea."
+
+---
+
+## Part 3: Devil's Advocate Technique (8 minutes)
+
+**Concept (2 min):** Confirmation bias — we look for evidence that supports our ideas. Force AI to argue against your position. Key phrases: *"Be harsh but fair"*, *"Don't hold back"*.
+
+**Demo (5 min):** Paste into the same Gemini chat:
+
+```
+I believe that a cashless coffee shop near
+a university is a great business idea.
+
+Play devil's advocate. Give me the strongest
+possible arguments against this idea.
 Be harsh but fair. I want to know:
 
 1. Why might this fail?
 2. What am I probably not thinking about?
 3. Who would this NOT work for?
-4. What market conditions could kill this business?
+4. What market conditions could kill this?
 
 Don't hold back - I need to hear the hard truths.
 ```
 
-**Run Demo (4 minutes):**
-- Paste prompt into Gemini
-- Point out how AI identifies blind spots
-- Discuss how this strengthens decision-making
-
-**Key Point:**
-
-> "Notice I said 'be harsh but fair' and 'don't hold back.' Without that instruction, AI tends to be polite. You need to give it permission to be critical."
-
-**Transition:** "But what if you don't even know what questions to ask?"
+Point out: giving AI permission to be critical produces better feedback. Validating AND stress-testing in the same thread shows the conversation compounding.
 
 ---
 
-## Part 4: Reverse Prompting (10 minutes)
+## Part 4: The Human Edge + Voice Test (11 minutes)
 
-### Slide 10: "Part 4: Reverse Prompting"
-*Chapter marker*
+**The centrepiece of the session.** This connects everything to their assessments.
 
-### Slide 11: The Prompt
+### The Human Edge concept (3 min)
 
-**Concept Explanation (2 minutes):**
+**Script:**
 
-> "Sometimes the hardest part isn't getting answers - it's knowing what to ask. Reverse prompting flips the script. Instead of you asking AI questions, you ask AI to interview you."
+> "AI can write a book. It **cannot write the next bestseller.** A bestseller isn't just well-written — it carries a person: lived experience, taste, timing, voice. Nobody can prompt their way to it.
 >
-> "This is incredibly powerful when you're starting something new and don't know what you don't know."
+> Same for your work. AI can produce the essay, the report, the pitch — so can every other student in this room. The average is now free. So here's the question that decides your grades: **what makes YOUR submission different?**
+>
+> Your marker reads 200 papers. The ones that stand out are the ones with YOU in them — your example, your data, your reasoning, your voice. Using AI is fine. Submitting the average is what costs you."
 
-**Demo Prompt:**
+### Voice Test — Pass 1, generic (3 min)
+
+Paste into a fresh Gemini chat:
 
 ```
-I want to create a marketing plan for a new cashless coffee shop near a university.
-
-Before giving me any advice, interview me first. Ask me questions one at a time 
-to understand:
-- My target customers
-- My budget and timeline
-- My competitive advantages
-- My experience in this industry
-- Any constraints I'm working with
-
-After you understand my situation, then give me tailored marketing recommendations.
-
-Start with your first question.
+Write a 60-word social media promo for our Business
+Students' Association's end-of-semester Night Market.
 ```
 
-**Run Demo (5 minutes):**
-- Paste prompt into Gemini
-- Answer 2-3 of AI's questions
-- Show how responses become more tailored
+**Point at the output:** slick, forgettable — "unforgettable evening of food, fun and festivities." Could be any event, anywhere. This is the average — and the average is free.
 
-**Key Point:**
+### Voice Test — Pass 2, with voice (4 min)
 
-> "See how the advice becomes specific to YOUR situation? Generic prompts get generic answers. When AI understands your context, it gives you actionable insights."
+Paste into the same chat:
 
-**Student Activity (2 minutes):**
+```
+Here is ~100 words of my own writing: "Okay, real talk.
+Every end-of-sem event is the same. Someone books the tavern,
+there's a DJ nobody asked for, and everyone stands around in
+their tutorial groups too nervous to actually meet anyone.
+We're doing the opposite. Night market. Twenty stalls run by
+students — yes, the quiet guy from your stats tute is now a
+small-business owner selling dumplings. Bring five bucks, eat
+your way across the quad. If you see me near the milk tea
+stall, no you didn't."
 
-> "Think about an assignment or project you're working on. Try asking AI to interview you about it before giving advice. You'll be surprised how much better the output is."
+Rewrite the 60-word promo in my voice. Lead with the one
+thing only our club would say: real stalls run by students,
+not another tavern night.
+```
 
-**Transition:** "Now, before we wrap up, we need to talk about the dark side."
+**Land the point:**
 
----
+> "Same model, same event — now it sounds like a person. The AI did not get smarter. You gave it your edge: context and voice. **The difference IS the edge.**"
 
-## Part 5: Ethics & The Trap (10 minutes)
+### For their assignments (2 min)
 
-### Slide 12: "Part 5: Ethics & The Trap"
-*Chapter marker*
+> "Three ways to use this on your next assignment: paste in your own example from experience; bring your own data; and paste 100 words of your own writing and have AI *critique it, not write it*. Style Mirror on the companion site makes the voice part permanent."
 
-### Slide 13: The Billboard Rule & Hallucinations
-
-**The Billboard Rule (3 minutes):**
-
-> "Before you put anything into AI, ask yourself: Would I be comfortable if this appeared on a billboard?"
->
-> "Never share:
-> - Passwords or API keys
-> - Personal information about others
-> - Confidential business data
-> - Anything you wouldn't want made public
->
-> AI providers may use your inputs for training. Assume nothing is private."
-
-**Hallucinations - Back to Deloitte (4 minutes):**
-
-> "Remember Deloitte? They trusted AI-generated citations without checking. Here's the thing about AI hallucinations:"
-
-Key points:
-1. **AI doesn't know it's lying** - It generates plausible-sounding text, not verified facts
-2. **Confidence ≠ Accuracy** - AI sounds equally confident whether right or wrong
-3. **Always verify** - Especially citations, statistics, and factual claims
-
-**The Three Verification Questions:**
-1. Can I find this source independently?
-2. Does this statistic appear elsewhere?
-3. Does this make logical sense?
-
-**Bias Awareness (2 minutes):**
-
-> "AI is trained on human-generated data. That means it absorbs human biases. If you ask AI to describe a 'successful CEO,' it might default to male examples. If you ask about 'typical customers,' it might make assumptions based on stereotypes."
->
-> "Your job is to notice when AI might be reflecting bias, not truth."
-
-**Transition:** "Let's wrap up with where to go from here."
+**Name the arc:** "Look at what you just did across this session — validated an idea, stress-tested it, then made it unmistakably *yours*. That's the method."
 
 ---
 
-## Wrap-up & Resources (2 minutes)
+## Part 5: Reverse Prompting (3 minutes — concept only, no demo)
 
-### Slide 14: Resources & Next Steps
+> "One more technique — no demo. Sometimes the hardest part is knowing what questions to ask. Flip it: tell AI to interview YOU, one question at a time, before giving advice."
 
-**Key Takeaways:**
-1. AI is a thinking partner, not a replacement for thinking
-2. Use multi-perspective prompting (Board of Directors)
-3. Challenge your ideas (Devil's Advocate)
-4. Let AI interview you for better context (Reverse Prompting)
-5. Always verify, never trust blindly
+- Great for assignment planning, job interviews, business plans
+- Notice: the interview itself clarifies what you actually want — conversation IS thinking
+- **Full prompt is on the companion site — try it tonight on your next assignment**
 
-**Share Resources:**
-- Companion website URL (display QR code)
-- Student handout with all prompts
+---
 
-**Closing:**
+## Part 6: Billboard Rule, Hallucinations, VET, Trust Tool (8 minutes)
 
-> "The students who will succeed in business aren't the ones who avoid AI or blindly trust it. They're the ones who learn to collaborate with it effectively - while keeping their critical thinking sharp."
->
-> "The tools we covered today will serve you in this course and in your careers. Use them wisely."
+**The Billboard Rule (1.5 min):** "Before sharing anything with AI: would I be comfortable if this appeared on a billboard?" Never share passwords, personal info about others, confidential data.
 
-### Slide 15: Q&A / Thank You
+**The Hallucination Trap (1.5 min):** Back to Deloitte.
+1. AI doesn't know it's lying — it generates plausible text
+2. Confidence ≠ accuracy — sounds equally confident right or wrong
+3. Pattern matching, not truth
 
-**Q&A Time** (if time permits)
+**VET Framework (2 min):**
+
+| Letter | Question |
+|--------|----------|
+| **V** — Verify | Can you find this source independently? |
+| **E** — Explain | Can AI explain its reasoning? Ask "how do you know?" |
+| **T** — Test | Does it make logical sense? Cross-check. |
+
+> "If you can't verify it, don't use it."
+
+**The Trust Tool (3 min):** Two questions before acting on any output:
+
+1. **Precision** — does this need to be *precise*, or is *average* fine?
+2. **Blast radius** — if it's wrong, is the damage *small* or *large*?
+
+|  | Small stakes | Large stakes |
+|---|---|---|
+| **Average is fine** | Lean in | Verify the load-bearing bits |
+| **Must be precise** | Verify before you ship | **A human owns it** |
+
+> "Deloitte, in one line: a red-quadrant output treated as green. The model didn't fail uniquely — the placement failed. For your assignments: references and figures are red-quadrant. Verify those first. The interactive game on the companion site gives you scenarios to place on the grid — try it tonight."
+
+---
+
+## Wrap-up, Tools & Resources (5 minutes)
+
+### Key Takeaways
+
+1. AI is a **conversation partner** — the conversation *is* the thinking
+2. Use **RTCF** to structure better prompts
+3. Get **multiple perspectives** (Board) and **invite criticism** (Devil's Advocate)
+4. Your **voice and judgement** are the edge — don't submit the average
+5. **VET everything** — verify, explain, test
+6. **Place every task on the trust tool** — average/precise × small/large
+
+### Share Resources
+
+- Companion website URL + QR (all prompts, handout, Style Mirror, free tools guide, AI readiness quiz)
+- Free tools: NotebookLM (source-grounded, no hallucination), Gemini, ChatGPT, Claude
+
+### Closing
+
+> "The students who stand out won't be the ones who avoid AI or blindly trust it. They'll be the ones who think *with* it — and make sure there's something of *themselves* in everything they submit. The tools serve you in this course and in your careers. Use them wisely."
 
 ---
 
 ## Appendix A: All Demo Prompts
 
-### Prompt 1: Board of Directors
-
-```
-I'm considering opening a cashless coffee shop near a university campus. 
-Act as my board of directors and analyse this idea from multiple perspectives:
-
-1. As CFO: What are the financial considerations, risks, and potential ROI?
-2. As Marketing Director: How would you position this and reach the target market?
-3. As Operations Manager: What are the practical challenges of going cashless?
-4. As Legal Counsel: What regulations or legal issues should I consider?
-
-For each perspective, give me 3-4 key points to consider.
-```
-
-### Prompt 2: Devil's Advocate
-
-```
-I believe that a cashless coffee shop near a university is a great business idea.
-
-Play devil's advocate. Give me the strongest possible arguments against this idea. 
-Be harsh but fair. I want to know:
-
-1. Why might this fail?
-2. What am I probably not thinking about?
-3. Who would this NOT work for?
-4. What market conditions could kill this business?
-
-Don't hold back - I need to hear the hard truths.
-```
-
-### Prompt 3: Reverse Prompting
-
-```
-I want to create a marketing plan for a new cashless coffee shop near a university.
-
-Before giving me any advice, interview me first. Ask me questions one at a time 
-to understand:
-- My target customers
-- My budget and timeline
-- My competitive advantages
-- My experience in this industry
-- Any constraints I'm working with
-
-After you understand my situation, then give me tailored marketing recommendations.
-
-Start with your first question.
-```
-
----
+See slides — Board of Directors, Devil's Advocate, Voice Test Pass 1 & Pass 2. Reverse Prompting prompt lives on the companion site.
 
 ## Appendix B: Backup Discussion Questions
 
-If demos take less time than expected:
+If demos run short:
 
 1. "Has anyone had AI give them confidently wrong information? What happened?"
-2. "What business decisions do you think AI should NOT be used for?"
-3. "How do you think AI will change your future career?"
-
----
+2. "Read your draft to a friend — could they tell AI wrote it? What would make it unmistakably yours?"
+3. "What's something AI could never write about your life?"
 
 ## Appendix C: Troubleshooting
 
 **If Gemini is slow or down:**
-- Have screenshots of expected outputs ready
-- Switch to ChatGPT (chat.openai.com) or Claude (claude.ai) as backup
+- Screenshots of expected Voice Test outputs (have these ready — this is the centrepiece)
+- Switch to ChatGPT or Claude as backup
 
 **If students can't access AI tools:**
 - They can follow along with your demo
-- Direct them to the companion website for prompts to try later
+- All prompts are on the companion website
 
 **If running over time:**
-- Shorten student activities
-- Skip the Reverse Prompting student activity
-- Condense ethics section to key points only
+- Cut the Board of Directors student activity to 1 min
+- Compress the Billboard Rule to one sentence
+- Do NOT cut the Voice Test — it's the thesis demonstrated
+
+**If running under time:**
+- Run Appendix B discussion questions
+- Have a student paste 100 words of their own writing and run the Voice Test on it live
