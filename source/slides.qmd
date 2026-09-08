@@ -372,9 +372,9 @@ If you can't verify it, **don't use it**.
 VET replaces the old "three verification questions" with a memorable framework. Verify: find the source independently. Explain: ask AI to show its reasoning. Test: cross-check with other tools and your own logic. If you can't verify it, don't use it.
 :::
 
-## The Trust Tool — Where Does a Human Stay in the Loop? {.center}
+## The Trust Tool — Two Questions Before You Act {.center}
 
-Two questions before you act on any AI output:
+Ask them **before** you act on any AI output — not after:
 
 :::: {.columns}
 
@@ -396,15 +396,18 @@ If it's wrong, is the damage **small** or **large**?
 
 ::::
 
-|                       | **Small stakes**                  | **Large stakes**                        |
-|-----------------------|-----------------------------------|-----------------------------------------|
-| **Average is fine**   | Lean in                           | Verify the load-bearing bits            |
-| **Must be precise**   | Verify before you ship            | **A human owns it. AI is a first draft.** |
+::: {.notes}
+Two questions, not one. "Is this AI output correct?" is the wrong question — it has a different answer for every task. Ask instead: how exact must the answer be, and how big is the blast radius if it's wrong? A brainstorm can be average; a contract figure, a citation, a number someone acts on must be precise. Next slide: what those two answers tell you to do.
+:::
 
-**Practice:** the Trust Tool game — on the companion site.
+## The Trust Tool — The Grid {.center}
+
+![](images/trust-tool.png){fig-align="center" height=470}
+
+**Practise:** the Trust Tool game — on the companion site.
 
 ::: {.notes}
-Deloitte, in one line: a red-quadrant output treated as green. The model didn't fail uniquely — the placement failed. Almost every public AI failure is someone treating a must-be-precise, high-stakes output as if it were an average, low-stakes one. The trust tool makes placement a conscious act: average or precise, small or large? Green corner: lean in, let AI run. Red corner: a human owns the decision. For assignments: your references and figures are red-quadrant — verify those before anything else. The interactive game on the companion site serves up scenarios to place on the grid.
+Bottom-left: average and small stakes — lean in, let AI run. Top-right: precise and large stakes — a human stays in the loop; AI is a first draft only. The off-diagonals are judgement calls — verify before you ship. Deloitte, in one line: the top-right corner treated as the bottom-left. The model didn't fail uniquely — the placement failed. Almost every public AI failure is a top-right output treated as bottom-left. For assignments: your references and figures are top-right — verify those before anything else. The interactive game on the companion site serves up scenarios to place on the grid — try it tonight.
 :::
 
 ## Free AI Tools You Can Use Today

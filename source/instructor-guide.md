@@ -247,17 +247,18 @@ shop — but in my voice.
 
 > "If you can't verify it, don't use it."
 
-**The Trust Tool (3 min):** Two questions before acting on any output:
+**The Trust Tool (3 min, two slides):** Two questions before acting on any output:
 
 1. **Precision** — does this need to be *precise*, or is *average* fine?
 2. **Blast radius** — if it's wrong, is the damage *small* or *large*?
 
-|  | Small stakes | Large stakes |
-|---|---|---|
-| **Average is fine** | Lean in | Verify the load-bearing bits |
-| **Must be precise** | Verify before you ship | **A human owns it** |
+Then show the grid (chart image):
 
-> "Deloitte, in one line: a red-quadrant output treated as green. The model didn't fail uniquely — the placement failed. For your assignments: references and figures are red-quadrant. Verify those first. The interactive game on the companion site gives you scenarios to place on the grid — try it tonight."
+- **Bottom-left (average · small):** lean in, let AI run
+- **Top-right (precise · large):** a human stays in the loop — AI is a first draft only
+- **Off-diagonals:** judgement calls — verify before you ship
+
+> "Deloitte, in one line: the top-right corner treated as the bottom-left. The model didn't fail uniquely — the placement failed. For your assignments: references and figures are top-right. Verify those first. The interactive game on the companion site gives you scenarios to place on the grid — try it tonight."
 
 ---
 
